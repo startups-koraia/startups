@@ -29,6 +29,37 @@
     <style>
         @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 
+        .countdown {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #001a275a;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 2em;
+        }
+
+        .time-box {
+            background-color: #333;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .time-box span {
+            display: block;
+
+        }
+
+        .label {
+            font-size: 0.5em;
+            color: #aaa;
+        }
+
+
         .download {
             width: 200px;
             height: 75px;
@@ -271,7 +302,7 @@
         .generation-tab button {
             padding: 20px 80px;
             font-size: 18px;
-            background-color: #f0f0f01b;
+            background-color: #e8e86b4d;
             border: none;
             cursor: pointer;
             transition: background-color 0.3s ease;
@@ -325,12 +356,38 @@
             </div>
         </div>
         <br>
-        <img id="main" src="img/top-main.jpg" alt="랜딩 페이지 이미지">
+        <img id="main" src="img/24_2_top.png" alt="랜딩 페이지 이미지" style="width: 100%;"><br><br>
+
         <div>
-            <a href="https://bit.ly/3XA8RNv" class="cta-button" target="_blank">등록하기 <i
-                    class="fa fa-arrow-right" aria-hidden="true"></i>
+            <p>얼리버드 할인 마감까지</p>
+            <div class="countdown" id="countdown">
+                <div class="time-box">
+                    <span id="days" style="font-size: 40px;">3</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="time-box">
+                    <span id="hours" style="font-size: 40px;">7</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="time-box">
+                    <span id="minutes" style="font-size: 40px;">56</span>
+                    <span class="label">Minutes</span>
+                </div>
+                <div class="time-box">
+                    <span id="seconds" style="font-size: 40px;">35</span>
+                    <span class="label">Seconds</span>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+
+
+        <div>
+            <a href="https://bit.ly/3YkS6X0" class="cta-button" target="_blank">등록하기 <i class="fa fa-arrow-right"
+                    aria-hidden="true"></i>
             </a>
         </div>
+        <br><br><br>
 
         <!-- 1기/2기 탭 -->
         <div class="generation-tab">
@@ -579,8 +636,8 @@
             <!-- 나머지 섹션들도 이와 같은 방식으로 추가 -->
 
             <div><img src="img/bottom.jpg" alt="수강신청 기간" style="width: 100%;"></div>
-            <a href="https://bit.ly/3XA8RNv" class="cta-button" target="_blank">등록하기 <i
-                    class="fa fa-arrow-right" aria-hidden="true"></i>
+            <a href="https://bit.ly/3YkS6X0" class="cta-button" target="_blank">등록하기 <i class="fa fa-arrow-right"
+                    aria-hidden="true"></i>
             </a>
             <div style="height: 100px"></div>
 
@@ -588,7 +645,243 @@
         </div>
 
         <div id="second-gen" class="generation-content active">
-            <p style="height: 500px;">곧 사전 등록 얼리버드가 오픈 될 예정입니다.</p>
+
+            <br>
+            <div class="section">
+                <div class="title" style="margin-bottom: 6%;">인사말</div>
+                <div class="content">
+                    <p style="margin: 7% 3%;">우리는 현재 <strong>지식 기반 경제의 전환점</strong>에 서 있으며, <strong>인공지능</strong>은 이 변화의
+                        중심에
+                        있습니다. 인공지능은 단순한 기술 진보를 넘어, 우리의 업무 방식, 의사결정 과정, 심지어 우리가 세상을 바라보는 관점까지 재정립하고 있습니다. 이러한 변화의 소용돌이
+                        속에서,
+                        <strong>리더로서 우리의 역할</strong>은 더욱 중요해지고 있습니다.
+                    </p>
+                    <p style="margin: 7% 3%;"><strong>AI 리더 아카데미</strong>는 이러한 시대적 요구에 부응하여 설립되었습니다. 우리의 목표는 각 분야의
+                        임직원들이
+                        인공지능 기술의 기본 원리를 이해하고, 이를 자신의 업무에 어떻게 통합할 수 있을지 탐색하는 것입니다. 또한, 이 과정을 통해 여러분은 비슷한 비전을 가진 다른 리더들과
+                        교류하며,
+                        <strong>서로의 경험과 지식을 공유할 수 있는 소중한 기회</strong>를 갖게 될 것입니다.
+                    </p>
+                    <p style="margin: 7% 3%;">저희는 <strong>엄선된 강사진</strong>을 구성하였고, 인공지능 기술의 최전선에서 일하는 전문가들로부터 실질적이고 깊이
+                        있는
+                        지식을 전달받을 수 있도록 준비하였습니다. 이러한 고품질의 커리큘럼을 통해, 여러분은 인공지능 시대를 선도하는 리더로서 필요한 <strong>통찰력과 전략적
+                            사고</strong>를
+                        갖추게 될 것입니다.</p>
+                    <p style="margin: 7% 3%;">이 아카데미는 단순한 교육 프로그램을 넘어, 여러분이 미래를 향한 여정에서 필요한 <strong>지식과 네트워크를
+                            구축</strong>할 수
+                        있는 플랫폼입니다. 우리는 여러분이 이 과정을 통해 더 큰 영감을 받고, 자신의 조직과 사회에 긍정적인 변화를 일으킬 수 있는 동력을 얻기를 바랍니다.</p>
+                </div>
+            </div>
+            <br>
+            <!-- <div>
+
+                <p>초거대 AI 활용 사례 및 기술 동향에 대한 특강</p>
+                <p>기업의 초거대 AI 적용 사례 및 지능화 전략에 대한 인사이트 공유</p>
+                <p>수요기업과 공급기업 CEO, 유관기관장 등 간의 정보 교류와 네트워킹</p>
+                <br><br>
+                <div style="
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    ">
+                    <span style="
+        display: inline-block; margin-bottom: 20px;
+    "><a href="https://raw.githubusercontent.com/startups-koraia/startups/main/img/2024_AI_CEO_ACADEMY.pdf">
+                            <div class="download">
+                                <i class="fa fa fa-book fa-3x"></i>
+                                <span class="df">&nbsp;&nbsp;&nbsp;Download</span>
+                                <span class="dfn">&nbsp;&nbsp;&nbsp;브로셔</span>
+                            </div>
+                        </a></span>
+                    <span style="
+        display: inline-block;
+    "><a href="https://www.aitimes.kr/news/articleView.html?idxno=30764" target="_blank">
+                            <div class="download">
+                                <i class="fa fa-newspaper-o fa-2x"></i>
+
+                                <span class="df">&nbsp;&nbsp;&nbsp;언론보도</span>
+                                <span class="dfn">&nbsp;&nbsp;&nbsp;뉴스기사Ⅰ</span>
+                            </div>
+                        </a></span>
+                    <span style="
+        display: inline-block;
+    "><a href="https://zdnet.co.kr/view/?no=20240420110508" target="_blank">
+                            <div class="download">
+                                <i class="fa fa-newspaper-o fa-2x"></i>
+
+                                <span class="df">&nbsp;&nbsp;&nbsp;언론보도</span>
+                                <span class="dfn">&nbsp;&nbsp;&nbsp;뉴스기사 Ⅱ</span>
+                            </div>
+                        </a></span>
+
+                    <span style="
+                        display: inline-block;
+                    "><a href="https://zdnet.co.kr/view/?no=20240611150543" target="_blank">
+                            <div class="download">
+                                <i class="fa fa-newspaper-o fa-2x"></i>
+
+                                <span class="df">&nbsp;&nbsp;&nbsp;언론보도</span>
+                                <span class="dfn">&nbsp;&nbsp;&nbsp;뉴스기사 Ⅲ</span>
+                            </div>
+                        </a></span>
+                </div>
+            </div> -->
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+
+
+            <br>
+
+            <div style="color: white; text-align: left; margin-left: 5%;">세부 커리큘럼</div>
+            <br>
+
+            <div class="sub_container">
+                <div class="row">
+
+                    <img src="img/24_2_1.png" alt="1강 개강식 및 인사말">
+
+                    <!--             <a href="https://docs.google.com/forms/d/17S9xz8145wuPtWePvPd-bTLstIi2nrxgi6giXxFMrF0/viewform?edit_requested=true"
+                   target="_blank"> -->
+                    <img src="img/24_2_2.png" alt="2강 AI가 바꿀 미래 사회와 국내외 정책동향, 이상욱 교수">
+                    <!--             </a> -->
+                </div>
+
+            </div>
+            <div class="sub_container">
+                <div class="row">
+                    <!--             <a href="https://docs.google.com/forms/d/17S9xz8145wuPtWePvPd-bTLstIi2nrxgi6giXxFMrF0/viewform?edit_requested=true"
+                   target="_blank"> -->
+                    <img src="img/24_2_3.png" alt="3강 데이터가 주도하는 디지털 혁신과 생성형 AI의 활용, 이주석 부사장">
+                    <!--             </a> -->
+                    <!--             <a href="https://docs.google.com/forms/d/17S9xz8145wuPtWePvPd-bTLstIi2nrxgi6giXxFMrF0/viewform?edit_requested=true"
+                   target="_blank"> -->
+                    <img src="img/24_2_4.png" alt="4강 미정">
+                    <!--             </a> -->
+                </div>
+            </div>
+            <div class="sub_container">
+                <div class="row">
+                    <!--             <a href="https://docs.google.com/forms/d/17S9xz8145wuPtWePvPd-bTLstIi2nrxgi6giXxFMrF0/viewform?edit_requested=true"
+                   target="_blank"> -->
+                    <img src="img/24_2_5.png" alt="5강 경북대학교 AI CEO 기술 교류회, 미정">
+                    <!--             </a> -->
+                    <!--             <a href="https://docs.google.com/forms/d/17S9xz8145wuPtWePvPd-bTLstIi2nrxgi6giXxFMrF0/viewform?edit_requested=true"
+                   target="_blank"> -->
+                    <img src="img/24_2_6.png" alt="6강 AI 공존 시대에 필요한 윤리적 상상력 그리고 규제, 김명주 교수">
+                    <!--             </a> -->
+                </div>
+            </div>
+            <div class="sub_container">
+                <div class="row">
+                    <!--             <a href="https://docs.google.com/forms/d/17S9xz8145wuPtWePvPd-bTLstIi2nrxgi6giXxFMrF0/viewform?edit_requested=true"
+                   target="_blank"> -->
+                    <img src="img/24_2_7.png" alt="7강 생성형 AI시대, 우리는 어떻게 살아남아야 하는가?, 김윤경 대표">
+                    <!--             </a> -->
+                    <!--             <a href="https://docs.google.com/forms/d/17S9xz8145wuPtWePvPd-bTLstIi2nrxgi6giXxFMrF0/viewform?edit_requested=true"
+                   target="_blank"> -->
+                    <img src="img/24_2_8.png" alt="8강 인공지능과 미래역량, 김재인 교수">
+                    <!--             </a> -->
+                </div>
+            </div>
+
+
+            <div class="section mobile">
+                <div class="title">2기 과정 안내</div>
+                <div class="content">
+                    <span class="highlight">기간:</span> `24. 9. 25.(수) ~ 11. 13(수) <br>- 총 8회 강의<br>
+                    <span class="highlight">장소:</span> 서울 영등포구 여의대로 24, 전경련 회관(FKI타워) 3층 파인2룸<br>
+                    <a href="https://naver.me/5ipfb7pI" target="_blank" style="
+        text-decoration: none;
+        color: #32a23a; font-size: 20px;
+    ">(<i class="fa fa-map-marker" aria-hidden="true"></i> 네이버지도)
+                    </a> &nbsp;&nbsp;&nbsp;
+                    <a href="https://kko.to/ANwqc-ThCp" target="_blank" style="
+        text-decoration: none;
+        color: #a59303;font-size: 20px;
+    ">(<i class="fa fa-map-marker" aria-hidden="true"></i> 카카오맵)
+                    </a><br><br>
+                    <span class="highlight">일시:</span> 18:40-20:30 <br>(석식 시간 포함)
+                </div>
+            </div>
+
+            <div class="section mobile">
+                <div class="title">모집 안내</div>
+                <div class="content">
+                    <span class="highlight">모집인원:</span> 40명 내외<br>
+                    <span class="highlight">지원자격:</span><br>
+                    - 대기업, 중견/중소기업, <br>스타트업 등 최고경영자·고위임원 <br>(비 IT·AI기업 포함)<br><br>
+                    - 정부 각 기관의 고위공무원, <br>공공기관 및 공기업 임원<br><br>
+                    - 전문직 인사 <br>(의사, 변호사, 변리사, 대학교수 등)<br><br>
+                    - 기타 주요 기관의 기관장급<br><br>
+                    <span class="highlight">등록금:</span> 240만원(VAT 별도)<br>
+                    <span class="highlight">원서접수마감:</span> ` 9월 20일 (금) 18:00<br>
+                    <span class="highlight">얼리버드:</span> 190만원(VAT 별도) ` 8월 25일까지<br>
+                    <span class="highlight">전형방법:</span> 서류전형 후 개별통보<br>
+                    <span class="highlight">접수방법:</span> 온라인(홈페이지)접수<br>
+                </div>
+            </div>
+
+            <div class="section mobile">
+                <div class="title">특전</div>
+                <div class="content">
+                    🏆 <strong>한국인공지능협회 명의의 수료증 수여<br></strong> 8주간에 걸친 소정의 과정중 80% 이상을 수료한 분에게 한국인공지능협회장 명의의 이수증을
+                    수여합니다.<br><br>
+                    🌟 <strong>한국인공지능자격센터<br> CAIO(최고인공지능경영자) 자격 부여<br></strong> 과정 80% 이상 수료 시, CAIO 자격을 획득합니다.<br><br>
+                    🤝 <strong>AI CEO 최고위과정 네트워크 활용<br></strong>- 셀럽들 휴먼 AI 구축 협업 제공<br>- 글로벌 테크기업과의 협업 제공<br>- 정부 정책
+                    결정권자와의
+                    네트워킹 구축<br>- 정부사업 컨소시엄 참여기회 제공<br>- RAG 시스템 협업 제공<br><br>
+                    🛠️ <strong>한국인공지능인증센터 <br>산업지능화 인증신청시 일부 지원<br></strong> 인증 신청 시, 일부 지원을 받을 수 있습니다.<br><br>
+                    📚 <strong>세미나 및 포럼 참가<br></strong> 관련 세미나 및 포럼에 우선적으로 참가할 수 있는 기회를 제공합니다.<br><br>
+                    📢 <strong>홍보&마케팅 일부 지원<br></strong> 과정 수강자들의 기업에 대한 홍보 및 마케팅 지원을 제공합니다.<br><br>
+                    📝 <strong>AI EXPO KOREA 2025 <br>국제인공지능대전<br></strong> 부스 참가 시, 할인을 제공합니다.<br><br>
+                    📖 <strong>강연자 집필책 증정<br></strong> 강연자가 집필한 책을 과정 수강자들에게 증정합니다.
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="content">
+                    <div style="text-align: center;">
+                        <a href="https://naver.me/5ipfb7pI" target="_blank" style="
+        text-decoration: none;
+        color: #32a23a; font-size: 20px;
+    "><i class="fa fa-map-marker" aria-hidden="true"></i> 네이버지도
+                        </a> &nbsp;&nbsp;&nbsp;
+                        <a href="https://place.map.kakao.com/8064605" target="_blank" style="
+        text-decoration: none;
+        color: #a59303;font-size: 20px;
+    "><i class="fa fa-map-marker" aria-hidden="true"></i> 카카오맵
+                        </a>
+                    </div>
+
+                    <img src="img/24_2_map.png" style=" width: 100%;">
+                </div>
+            </div>
+
+            <div class="section mobile">
+                <div class="title">상담문의</div>
+                <div class="content">
+                    📞 02-713-4800<br><br>
+                    🔗 info@koraia.org
+                </div>
+            </div>
+
+
+            <!-- 나머지 섹션들도 이와 같은 방식으로 추가 -->
+
+            <div><img src="img/24_2_footer.png" alt="수강신청 기간" style="width: 100%;"></div>
+            <a href="https://bit.ly/3YkS6X0" class="cta-button" target="_blank">등록하기 <i class="fa fa-arrow-right"
+                    aria-hidden="true"></i>
+            </a>
+            <div style="height: 100px"></div>
+
+            <br><br><br>
+
         </div>
 
 
@@ -644,6 +937,32 @@
         document.getElementById(gen + '-gen').classList.add('active');
         event.target.classList.add('active');
     }
+</script>
+<script>
+    function updateCountdown() {
+        const eventDate = new Date("2024-08-25T23:59:59").getTime();
+        const now = new Date().getTime();
+        const distance = eventDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = days;
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
+
+        if (distance < 0) {
+            clearInterval(interval);
+            document.querySelector(".message").innerText = "The event has started!";
+            document.getElementById("countdown").style.display = "none";
+        }
+    }
+
+    const interval = setInterval(updateCountdown, 1000);
+    updateCountdown();
 </script>
 
 </html>
