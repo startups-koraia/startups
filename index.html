@@ -56,11 +56,11 @@
 
         .session img {
             width: 100%;
-            max-width: 380px;
+            max-width: 45%;
             margin: 10px 0;
             border-radius: 10px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease-in-out;
             display: inline-block;
         }
 
@@ -94,8 +94,11 @@
         }
 
         .session p:hover {
-            font-size: 1em;
+            /* font-size: 1em; */
             line-height: 2.2em;
+            transform: scale(1.08);
+            background-color: rgb(251, 251, 240);
+            
         }
 
 
@@ -473,17 +476,18 @@
                 <span
                     style="width: 28%; height: 40px; background-position: left; background: url('img/KORAIA_Logo_white.png'); background-size: contain; background-repeat: no-repeat; display: inline-block"></span>
                 <a target="_blank" href="https://koraia.org"
-                    style="text-decoration: none; color: #f7e218; font-size: 14px; line-height: 1.8; ">koraia.org</a>
+                    style="text-decoration: none; color: #f7e218; font-size: 14px; line-height: 1.8; ">www.koraia.org</a>
             </div>
         </div>
         <br>
-        <img id="main" src="img/24_2_top.png" alt="랜딩 페이지 이미지" style="width: 100%;"><br><br>
+        <img id="main" src="img/ai_leader_poster_3.jpg" alt="랜딩 페이지 이미지" style="width: 100%;"><br><br>
+        <!-- <img src="img/ai_leader_poster_3.jpg" alt="AI 리더 아카데미 3기 포스터" style="width: 100%; height: auto;"> -->
 
 
 
 
         <div>
-            <a href="https://bit.ly/3YkS6X0" class="cta-button" target="_blank">등록하기 <i class="fa fa-arrow-right"
+            <a href="https://forms.gle/iA3s9ZhhA1fUbcC87" class="cta-button" target="_blank">등록하기 <i class="fa fa-arrow-right"
                     aria-hidden="true"></i>
             </a>
         </div>
@@ -492,7 +496,8 @@
         <!-- 1기/2기 탭 -->
         <div class="generation-tab">
             <button onclick="showGeneration('first')">지난 1기</button>
-            <button onclick="showGeneration('second')" class="active">2기</button>
+            <button onclick="showGeneration('second')">지난 2기</button>
+            <button onclick="showGeneration('third')" class="active">3기 모집 중</button>
         </div>
 
         <div id="first-gen" class="generation-content ">
@@ -736,7 +741,7 @@
             <!-- 나머지 섹션들도 이와 같은 방식으로 추가 -->
 
             <div><img src="img/bottom.jpg" alt="수강신청 기간" style="width: 100%;"></div>
-            <a href="https://bit.ly/3YkS6X0" class="cta-button" target="_blank">등록하기 <i class="fa fa-arrow-right"
+            <a href="https://forms.gle/iA3s9ZhhA1fUbcC87" class="cta-button" target="_blank">등록하기 <i class="fa fa-arrow-right"
                     aria-hidden="true"></i>
             </a>
             <div style="height: 100px"></div>
@@ -744,45 +749,166 @@
             <br><br><br>
         </div>
 
-        <div id="second-gen" class="generation-content active">
+        <div id="second-gen" class="generation-content">
 
             <br>
             <div class="section">
-                <div class="title" style="margin-bottom: 6%;">인사말</div>
-                <div class="content">
-                    <p style="margin: 7% 3%;">우리는 현재 <strong>지식 기반 경제의 전환점</strong>에 서 있으며, <strong>인공지능</strong>은 이 변화의
-                        중심에
-                        있습니다. 인공지능은 단순한 기술 진보를 넘어, 우리의 업무 방식, 의사결정 과정, 심지어 우리가 세상을 바라보는 관점까지 재정립하고 있습니다. 이러한 변화의 소용돌이
-                        속에서,
-                        <strong>리더로서 우리의 역할</strong>은 더욱 중요해지고 있습니다.
-                    </p>
-                    <p style="margin: 7% 3%;"><strong>AI 리더 아카데미</strong>는 이러한 시대적 요구에 부응하여 설립되었습니다. 우리의 목표는 각 분야의
-                        임직원들이
-                        인공지능 기술의 기본 원리를 이해하고, 이를 자신의 업무에 어떻게 통합할 수 있을지 탐색하는 것입니다. 또한, 이 과정을 통해 여러분은 비슷한 비전을 가진 다른 리더들과
-                        교류하며,
-                        <strong>서로의 경험과 지식을 공유할 수 있는 소중한 기회</strong>를 갖게 될 것입니다.
-                    </p>
-                    <p style="margin: 7% 3%;">저희는 <strong>엄선된 강사진</strong>을 구성하였고, 인공지능 기술의 최전선에서 일하는 전문가들로부터 실질적이고 깊이
-                        있는
-                        지식을 전달받을 수 있도록 준비하였습니다. 이러한 고품질의 커리큘럼을 통해, 여러분은 인공지능 시대를 선도하는 리더로서 필요한 <strong>통찰력과 전략적
-                            사고</strong>를
-                        갖추게 될 것입니다.</p>
-                    <p style="margin: 7% 3%;">이 아카데미는 단순한 교육 프로그램을 넘어, 여러분이 미래를 향한 여정에서 필요한 <strong>지식과 네트워크를
-                            구축</strong>할 수
-                        있는 플랫폼입니다. 우리는 여러분이 이 과정을 통해 더 큰 영감을 받고, 자신의 조직과 사회에 긍정적인 변화를 일으킬 수 있는 동력을 얻기를 바랍니다.
-                    </p>
-                    <div
-                        style="background-image: url('img/leader.png'); background-repeat: no-repeat; background-position: right bottom; width: 100%; height: 279px; border-bottom: 2px solid gray;">
+                <div class="academy-content">
+                    <h2>지난 2기 AI 리더 아카데미</h2>
+        
+                    <div class="session">
+                        <div class="session-images">
+                            <img src="img/1t.jpg" alt="Session 1">
+                            <img src="img/1tt.jpg" alt="Session 1 Speaker">
+                        </div>
+                        <h3>한국인공지능협회, 2기 AI 리더 아카데미 개강 – AI 리더 양성의 첫걸음</h3>
+                        <p>9월 25일 여의도 FKI타워에서 인공지능 전문가 양성을 목표로 하는 2기 AI 리더 아카데미 개강식을 개최했습니다. 개강식에서 LG AI Research의
+                            임우형 상무는 LG그룹의 자체 AI 모델 엑사원(EXAONE)을 활용한 우수 사례를 소개하며, 이 모델이 국내외로 확산되는 방안을 발표했습니다.
+        
+                            임 상무는 AI 연구의 진화가 단순 생성 기능에서 나아가, 미래에는 사실 기반 진단과 자율 실행 AI 에이전트로 발전할 것으로 예상된다고 설명했습니다. AI가 복잡한 인과
+                            관계를 분석하여 물류, 금융, 원자재 가격 등을 예측함으로써 중요한 의사결정에 기여할 것이라는 전망도 제시했습니다. 그는 AI 도입의 핵심은 해결해야 할 문제를 명확히
+                            정의하는 것이라고 강조하며, 문제 정의의 중요성을 강조했습니다.
+        
+                            개강식에서 권영우 연수원장은 생성형 AI의 영향력이 커지고 있다며, 이러한 AI 기술을 효과적으로 활용하는 리더가 앞으로 경쟁에서 우위를 점할 것이라고 언급했습니다. AI
+                            리더 아카데미는 이러한 리더를 양성하기 위해 지속적으로 진행될 예정입니다.</p>
                     </div>
-                    <div style="text-align: right; font-weight: 400; font-family: 'Do Hyeon'; font-size: 2em;">인공지능연수원장
-                        권영우
-                        <img src="img/leader_sign.png" alt="sign"
-                            style="width: 20%; display: block; margin-left: auto;">
+                    <br><br><br>
+                    <div class="session">
+                        <div class="session-images">
+                            <img src="img/2t.jpg" alt="Session 2">
+                            <img src="img/2tt.jpg" alt="Session 2 Speaker">
+                        </div>
+                        <h3>미래를 선도하는 AI 활용, 리더의 역할부터 시작해야</h3>
+                        <p>SK mySUNI의 김지현 부사장은 한국인공지능협회 2기 AI 리더 아카데미 특강에서 AI의 발전이 기업의 미래에 미칠 영향에 대해 발표했습니다. 김 부사장은 특히 COT(Chain
+                            of Thought) 모델의 도입으로 생성형 AI가 한 단계 더 진화했으며, 이는 AI가 복잡한 질문에 대해 중간 풀이 과정까지 제공하는 방식이라고 설명했습니다. 앞으로 인공지능은
+                            LLM(대형 언어 모델)을 넘어 LMM(대형 멀티모달 모델), LAM(거대행동모델) 등 다양한 영역으로 확장될 것으로 전망했습니다.
+        
+                            김 부사장은 2025년부터 생성형 AI가 기존 제품과 서비스의 인터페이스를 혁신하며, 대화형 AI가 기업의 변화를 이끌 주요 요소가 될 것이라고 강조했습니다. 이를 위해 기업의
+                            리더들은 AI의 가능성과 한계를 스스로 경험하며 기업 내 AI 활용 전략을 주도적으로 세워야 한다고 강조했습니다. 리더는 AI를 통해 비즈니스 문제를 해결하고 혁신을 도모하는
+                            방법을 모색하는 동시에, 위험 관리와 투자 효율성을 고려하여 적합한 AI 도구를 선택하는 것이 중요하다고 조언했습니다.
+        
+                            특강 당일, 판도플랫폼의 정성천 대표가 AI 리더 아카데미 원우회장으로 선출되었으며, 수강생 간의 정보 교류와 네트워킹을 강화하겠다는 의지를 밝혔습니다.</p>
                     </div>
-
-
-
+                    <br><br><br>
+        
+                    <div class="session">
+                        <div class="session-images">
+                            <img src="img/3t.jpg" alt="Session 3">
+                            <img src="img/3tt.jpg" alt="Session 3 Speaker">
+                        </div>
+                        <h3>AI 도입 전략과 성공 사례 특강</h3>
+                        <p>포티투마루의 김동환 CEO는 한국인공지능협회 2기 AI 리더 아카데미 특강에서 기업이 AI 도입을 통해 실질적인 성과를 거두려면 우선 기업의 문제를 명확히 파악하고 이를 AI로
+                            해결할 수 있는지 면밀히 분석해야 한다고 강조했습니다. 김 CEO는 AI를 목적이 아닌 수단으로 삼아야 한다며, AI+X 전략보다는 문제 해결을 중심에 두는 X+AI 전략의
+                            중요성을 설명했습니다.
+        
+                            강연에서는 조선 해양 분야에서의 AI 설계 시간 단축 사례, 자동차 및 로보틱스 업종의 고장 예측 및 정비 자동화 사례, 보험 상담사의 신속한 고객 응대를 위한 AI 활용 등
+                            다양한 산업별 AI 성공 사례가 소개되었습니다.
+                        </p>
+                    </div>
+        
+                    <br><br><br>
+        
+                    <div class="session">
+                        <div class="session-images">
+                            <img src="img/4t.jpg" alt="Session 4">
+                            <img src="img/4tt.jpg" alt="Session 4 Speaker">
+                        </div>
+                        <h3>한국형 자율주행의 혁신, 마음AI의 WoRV 기술</h3>
+                        <p>㈜마음AI의 최홍섭 대표는 한국인공지능협회 2기 AI 리더 아카데미 특강에서, 상황을 스스로 판단하고 엔드투엔드로 주행하는 'WoRV(World model Robotics and
+                            Vehicle control)' 기술을 통해 자율주행 솔루션을 개발하고 있다고 밝혔습니다. WoRV 기술은 기존 규칙 기반의 자율주행 방식이 가진 한계를 극복하며, 시각 정보를
+                            기반으로 투명한 유리나 물웅덩이 등 위험 요소를 인식하고 회피하는 능력을 갖추고 있습니다.
+        
+                            기존 자율주행 차량이 라이다(LiDAR) 기술을 사용하여 경로를 그려도 예외 상황에서 어려움을 겪는 것과 달리, WoRV 기반 자율주행차는 맥락을 이해하는 능력으로 모호한 지시도
+                            수행할 수 있습니다. 마음AI는 2025년부터 과수원에서 농약을 뿌리는 자율주행 차량과 같은 다양한 산업분야에 WoRV 기술을 적용할 계획입니다.
+        
+                            또한 최 대표는 인간의 노동력을 대체하는 파운데이션 모델의 등장과 AI의 실질적 비즈니스 가치를 강조했습니다. 특히 육체노동의 대체에 큰 잠재력을 지닌 'EAI(Embodied
+                            AI)' 구현을 목표로, AI가 물리적 실체를 통해 환경과 상호작용하는 새로운 패러다임을 구현하고 있다고 설명했습니다.</p>
+                    </div>
+        
+                    <br><br><br>
+        
+                    <div class="session">
+                        <div class="session-images">
+                            <img src="img/5t.jpg" alt="Session 5">
+                            <img src="img/5tt.jpg" alt="Session 5 Speaker">
+                        </div>
+                        <h3>AI 시대의 리더십: 다양한 관점과 열린 사고의 중요성</h3>
+                        <p>㈜멀티캠퍼스의 김대균 이사는 한국인공지능협회 2기 AI 리더 아카데미 특강에서, 인공지능 시대의 리더는 다양한 관점과 열린 사고로 팀을 이끌어야 한다고 강조했습니다. 김 이사는
+                            AI가 인지 처리에서 좌뇌적 역할에 가까우며, 리더는 자신의 한계를 명확히 인식하고 모르는 것을 정확히 인정하는 태도가 중요하다고 설명했습니다.
+        
+                            또한, AI 시대의 리더는 문제를 해결할 때 표면에 드러난 현상만으로 답을 찾으려 하기보다는 전체 상황을 먼저 파악하고, 다양한 지식과 경험을 융합해 해결 방안을 모색해야 한다고
+                            조언했습니다. 그는 젊은 직원들에게 동기를 부여하고 다양한 관점을 공유하는 것이 AI를 효과적으로 활용하는 조직 문화를 구축하는 핵심이라고 강조했습니다.</p>
+                    </div>
+        
+                    <br><br><br>
+        
+                    <div class="session">
+                        <div class="session-images">
+                            <img src="img/6t.jpg" alt="Session 6">
+                            <img src="img/6tt.jpg" alt="Session 6 Speaker">
+                        </div>
+                        <h3>디지털 전환을 통한 기업 수익성 제고 전략</h3>
+                        <p>㈜이즈파크의 김갑산 대표는 한국인공지능협회 2기 AI 리더 아카데미 특강에서, 기업이 AI 기반 디지털 전환을 통해 수익성 및 생산성을 강화하는 전략을 소개했습니다. 김 대표는 지속
+                            가능한 성장을 위해 인공지능을 활용한 자동화와 데이터 분석을 통해 기업 운영의 효율성을 높이는 것이 중요하다고 강조했습니다.
+        
+                            강연에서는 여러 산업에서의 성공적인 AI 활용 사례가 소개되었습니다. 예를 들어, 제약회사는 RAG(검색 증강 생성) 기술을 도입하여 세금계산서 데이터의 자동 추출과 입력 과정을
+                            완전 자동화함으로써 오류율을 낮추고 시간과 원가를 절감했습니다. 플랫폼 기업은 AI를 통한 업무 자동화로 5년간 10억 원의 비용 절감 효과를 기대하고 있으며, 공공기관은 상담
+                            데이터 자동 생성으로 고품질 서비스를 제공해 고객 만족도를 높이고 있습니다. 제조공정 분야에서는 NC 프로그램의 자동화에 AI를 적용해 초보자도 높은 품질을 유지하며 작업할 수
+                            있도록 함으로써, 인적 오류 감소와 표준 데이터베이스 구축 등의 성과를 이루었습니다.
+        
+                            김 대표는 AI 도입 시, 인간의 통제와 책임이 중요하며, 경영진의 장기적 지원이 디지털 전환의 성공을 좌우한다고 언급했습니다.
+                        </p>
+                    </div>
+        
+                    <br><br><br>
+        
+                    <div class="session">
+                        <div class="session-images">
+                            <img src="img/7t.jpg" alt="Session 7">
+                            <img src="img/7tt.jpg" alt="Session 7 Speaker">
+                        </div>
+                        <h3>기업 비용 절감의 열쇠, 인공지능 활용</h3>
+                        <p>㈜업스테이지의 최홍준 부사장은 한국인공지능협회 2기 AI 리더 아카데미 특강에서, 성공적인 인공지능 도입을 위해서는 기업 특성에 맞춘 AI 솔루션과 데이터 관리 및 성능 최적화가
+                            필요하다고 강조했습니다. 그는 AI 융합과 전환을 통해 비용 절감을 실현할 수 있는 방법들을 소개했습니다.
+        
+                            업스테이지는 디지털 데이터 자산화와 업무 자동화를 목표로 ‘다큐먼트 AI’를 개발해 보급하고 있습니다. 특히, AI OCR의 도입을 통해 문서 데이터를 인식하는 초기 단계를 넘어,
+                            비즈니스 프로세스까지 이해하는 단계로 진화했으며, 나아가 워크플로우 전 과정을 자동화하는 ‘AI OCR + LLM’ 모델로 발전했습니다.
+        
+                            보험업계 사례로는 AI OCR 기술을 활용하여 보험 청약 심사 과정을 자동화함으로써 처리 시간을 절반으로 단축하고, 고객 만족도를 높이는 성과를 달성했습니다. 또한 AI 에이전트를
+                            통해 수술 보험금 심사와 같은 고정밀 업무를 자동화하여 시간 절약과 업무 정확도를 동시에 실현했습니다.
+        
+                            업스테이지는 태국어 특화 모델을 성공적으로 개발하며, 태국어 학습 데이터셋 구축과 현지 요소를 반영한 고성능 AI 모델을 통해 독보적인 성과를 거두었습니다. 이를 기반으로 향후
+                            동남아 시장으로 확장을 계획하고 있습니다.
+                        </p>
+                    </div>
+        
+                    <br><br><br>
+        
+                    <div class="session">
+                        <div class="session-images">
+                            <img src="img/8t.jpg" alt="Session 8">
+                            <img src="img/8tt.jpg" alt="Session 8 Speaker">
+                        </div>
+                        <h3>지속 가능한 AI 발전을 위한 규제 대응 전략</h3>
+                        <p>㈜STA테스팅컨설팅의 권원일 대표는 한국인공지능협회 2기 AI 리더 아카데미 특강에서, 인공지능 기술의 지속적 활용과 성장을 위해서는 규제 대응이 필수적이라고 강조했습니다. 그는
+                            EU를 비롯한 주요 국가들이 인공지능의 윤리적 문제, 인간 기본권 침해 등 우려로 규제를 강화하고 있어, 특히 우리나라의 스타트업들이 이에 잘 대비해야 한다고 설명했습니다.
+        
+                            권 대표는 AI 스타트업들이 규제에 대응하기 위한 3단계 전략을 제안했습니다. 첫째, 각 국가의 National Guidelines(국가 안내서)를 철저히 준수하고, 둘째,
+                            국제표준화기구의 AI 경영 인증 시스템인 ISO/IEC 42001 인증을 확보하며, 셋째, EU의 AI 관련 법률(EU AI Act)에 맞춰 철저히 준비하는 것이 필요하다고
+                            조언했습니다.
+        
+                            또한, 권 대표는 STA테스팅컨설팅이 AI 스타트업들이 규제 준수를 위한 AI 테스팅 및 컨설팅 서비스를 제공해 규제 대응의 위험을 줄이고, 지속적인 성장을 지원하고 있다고
+                            소개했습니다.
+        
+                        </p>
+                    </div>
+        
+        
+        
                 </div>
+
+                
+
             </div>
             <br>
 
@@ -898,10 +1024,60 @@
             </div>
 
 
-            <div class="section mobile">
-                <div class="title">2기 과정 안내</div>
+
+
+
+            <br><br><br>
+
+        </div>
+        
+
+        <div id="third-gen" class="generation-content active">
+
+            <div class="section">
+                
+                <br>
+                <br>
+                <div class="title" style="margin-bottom: 6%;">인사말</div>
                 <div class="content">
-                    <span class="highlight">기간:</span> `24. 9. 25.(수) ~ 11. 13(수) <br>- 총 8회 강의<br>
+                    <p style="margin: 7% 3%;">우리는 현재 <strong>지식 기반 경제의 전환점</strong>에 서 있으며, <strong>인공지능</strong>은 이 변화의
+                        중심에
+                        있습니다. 인공지능은 단순한 기술 진보를 넘어, 우리의 업무 방식, 의사결정 과정, 심지어 우리가 세상을 바라보는 관점까지 재정립하고 있습니다. 이러한 변화의 소용돌이
+                        속에서,
+                        <strong>리더로서 우리의 역할</strong>은 더욱 중요해지고 있습니다.
+                    </p>
+                    <p style="margin: 7% 3%;"><strong>AI 리더 아카데미</strong>는 이러한 시대적 요구에 부응하여 설립되었습니다. 우리의 목표는 각 분야의
+                        임직원들이
+                        인공지능 기술의 기본 원리를 이해하고, 이를 자신의 업무에 어떻게 통합할 수 있을지 탐색하는 것입니다. 또한, 이 과정을 통해 여러분은 비슷한 비전을 가진 다른 리더들과
+                        교류하며,
+                        <strong>서로의 경험과 지식을 공유할 수 있는 소중한 기회</strong>를 갖게 될 것입니다.
+                    </p>
+                    <p style="margin: 7% 3%;">저희는 <strong>엄선된 강사진</strong>을 구성하였고, 인공지능 기술의 최전선에서 일하는 전문가들로부터 실질적이고 깊이
+                        있는
+                        지식을 전달받을 수 있도록 준비하였습니다. 이러한 고품질의 커리큘럼을 통해, 여러분은 인공지능 시대를 선도하는 리더로서 필요한 <strong>통찰력과 전략적
+                            사고</strong>를
+                        갖추게 될 것입니다.</p>
+                    <p style="margin: 7% 3%;">이 아카데미는 단순한 교육 프로그램을 넘어, 여러분이 미래를 향한 여정에서 필요한 <strong>지식과 네트워크를
+                            구축</strong>할 수
+                        있는 플랫폼입니다. 우리는 여러분이 이 과정을 통해 더 큰 영감을 받고, 자신의 조직과 사회에 긍정적인 변화를 일으킬 수 있는 동력을 얻기를 바랍니다.
+                    </p>
+                    <div
+                        style="background-image: url('img/leader.png'); background-repeat: no-repeat; background-position: right bottom; width: 100%; height: 279px; border-bottom: 2px solid gray;">
+                    </div>
+                    <div style="text-align: right; font-weight: 400; font-family: 'Do Hyeon'; font-size: 2em;">인공지능연수원장
+                        권영우
+                        <img src="img/leader_sign.png" alt="sign"
+                            style="width: 20%; display: block; margin-left: auto;">
+                    </div>
+                </div>
+
+</div>
+
+            
+            <div class="section mobile">
+                <div class="title">3기 과정 안내</div>
+                <div class="content">
+                    <span class="highlight">기간:</span> `25. 3. 5.(수) ~ 4. 23(수) <br>- 총 8회 강의<br>
                     <span class="highlight">장소:</span> 서울 영등포구 여의대로 24, 전경련 회관(FKI타워) 3층 파인2룸<br>
                     <a href="https://naver.me/5ipfb7pI" target="_blank" style="
         text-decoration: none;
@@ -926,9 +1102,9 @@
                     - 정부 각 기관의 고위공무원, <br>공공기관 및 공기업 임원<br><br>
                     - 전문직 인사 <br>(의사, 변호사, 변리사, 대학교수 등)<br><br>
                     - 기타 주요 기관의 기관장급<br><br>
-                    <span class="highlight">등록금:</span> 240만원(VAT 별도)<br>
-                    <span class="highlight">원서접수마감:</span> ` 9월 20일 (금) 18:00<br>
-                    <span class="highlight">얼리버드:</span> 190만원(VAT 별도) ` 8월 25일까지<br>
+                    <span class="highlight">등록금:</span> 290만원(VAT 별도)<br>
+                    <span class="highlight">원서접수마감:</span> ` 3월 3일 (월) 18:00<br>
+                    <span class="highlight">얼리버드:</span> 240만원(VAT 별도) ` 1월 31일까지<br>
                     <span class="highlight">전형방법:</span> 서류전형 후 개별통보<br>
                     <span class="highlight">접수방법:</span> 온라인(홈페이지)접수<br>
                 </div>
@@ -957,7 +1133,7 @@
                 <div class="content">
 
 
-                    <img src="img/24_2_map.png" style=" width: 100%;">
+                    <img src="img/25_3_map.png" style=" width: 100%;">
                     <div style="text-align: center;">
                         <a href="https://naver.me/5ipfb7pI" target="_blank" style="
         text-decoration: none;
@@ -985,9 +1161,9 @@
 
             <!-- 나머지 섹션들도 이와 같은 방식으로 추가 -->
 
-            <div><img src="img/24_2_footer.png" alt="수강신청 기간" style="width: 100%;"></div>
+            <div><img src="img/25_3_footer.png" alt="수강신청 기간" style="width: 100%;"></div>
             <div>
-                <p>⏰ 접수 마감까지</p>
+                <p>⏰ 얼리버드 마감까지</p>
                 <div class="countdown" id="countdown">
                     <div class="time-box">
                         <span id="days" style="font-size: 2em;">3</span>
@@ -1008,210 +1184,47 @@
                 </div>
             </div>
             <br><br><br><br>
-            <a href="https://bit.ly/3YkS6X0" class="cta-button" target="_blank">등록하기 <i class="fa fa-arrow-right"
+            <a href="https://forms.gle/iA3s9ZhhA1fUbcC87" class="cta-button" target="_blank">등록하기 <i class="fa fa-arrow-right"
                     aria-hidden="true"></i>
             </a>
             <div style="height: 100px"></div>
 
+
             <p>
-            <div style="color: white; text-align: left; margin-left: 5%;">🤝 협찬사</div>
-            <br>
-            <div class="marquee-container">
-                <marquee behavior="scroll" direction="left" scrollamount="7" loop="infinite">
-                    <img src="img/sponsor_ms.png" alt="Sponsor 2">
-                    <img src="img/sponsor2.png" alt="Sponsor 2">
-                    <img src="img/sponsor4.png" alt="Sponsor 4">
-                    <img src="img/sponsor7.png" alt="Sponsor 7">
-                    <img src="img/sponsor3.png" alt="Sponsor 3">
-                    <img src="img/sponsor1.png" alt="Sponsor 1">
-                    <img src="img/sponsor5.png" alt="Sponsor 5">
-                    <img src="img/sponsor6.png" alt="Sponsor 6">
-                    <img src="img/sponsor8.png" alt="Sponsor 8">
-                    <img src="img/sponsor4.png" alt="Sponsor 4">
-                    <img src="img/sponsor2.png" alt="Sponsor 2">
-                    <img src="img/sponsor7.png" alt="Sponsor 7">
-                    <img src="img/sponsor3.png" alt="Sponsor 3">
-                    <img src="img/sponsor1.png" alt="Sponsor 1">
-                    <img src="img/sponsor5.png" alt="Sponsor 5">
-                    <img src="img/sponsor6.png" alt="Sponsor 6">
-                    <img src="img/sponsor8.png" alt="Sponsor 8">
-                    <img src="img/sponsor4.png" alt="Sponsor 4">
-                    <img src="img/sponsor2.png" alt="Sponsor 2">
-                    <img src="img/sponsor7.png" alt="Sponsor 7">
-                    <img src="img/sponsor3.png" alt="Sponsor 3">
-                    <img src="img/sponsor1.png" alt="Sponsor 1">
-                    <img src="img/sponsor5.png" alt="Sponsor 5">
-                    <img src="img/sponsor6.png" alt="Sponsor 6">
-                    <img src="img/sponsor8.png" alt="Sponsor 8">
-                    <!-- Add more sponsor logos as needed -->
-                </marquee>
-            </div>
-            </p>
-
-
-
-
-
-
-
-            <br><br><br>
-
+                <div style="color: white; text-align: left; margin-left: 5%;">🤝 협찬사</div>
+                <br>
+                <div class="marquee-container">
+                    <marquee behavior="scroll" direction="left" scrollamount="7" loop="infinite">
+                        <img src="img/sponsor_ms.png" alt="Sponsor 2">
+                        <img src="img/sponsor2.png" alt="Sponsor 2">
+                        <img src="img/sponsor4.png" alt="Sponsor 4">
+                        <img src="img/sponsor7.png" alt="Sponsor 7">
+                        <img src="img/sponsor3.png" alt="Sponsor 3">
+                        <img src="img/sponsor1.png" alt="Sponsor 1">
+                        <img src="img/sponsor5.png" alt="Sponsor 5">
+                        <img src="img/sponsor6.png" alt="Sponsor 6">
+                        <img src="img/sponsor8.png" alt="Sponsor 8">
+                        <img src="img/sponsor4.png" alt="Sponsor 4">
+                        <img src="img/sponsor2.png" alt="Sponsor 2">
+                        <img src="img/sponsor7.png" alt="Sponsor 7">
+                        <img src="img/sponsor3.png" alt="Sponsor 3">
+                        <img src="img/sponsor1.png" alt="Sponsor 1">
+                        <img src="img/sponsor5.png" alt="Sponsor 5">
+                        <img src="img/sponsor6.png" alt="Sponsor 6">
+                        <img src="img/sponsor8.png" alt="Sponsor 8">
+                        <img src="img/sponsor4.png" alt="Sponsor 4">
+                        <img src="img/sponsor2.png" alt="Sponsor 2">
+                        <img src="img/sponsor7.png" alt="Sponsor 7">
+                        <img src="img/sponsor3.png" alt="Sponsor 3">
+                        <img src="img/sponsor1.png" alt="Sponsor 1">
+                        <img src="img/sponsor5.png" alt="Sponsor 5">
+                        <img src="img/sponsor6.png" alt="Sponsor 6">
+                        <img src="img/sponsor8.png" alt="Sponsor 8">
+                        <!-- Add more sponsor logos as needed -->
+                    </marquee>
+                </div>
+                </p>
         </div>
-        <div class="academy-content">
-            <h2>지난 2기 AI 리더 아카데미</h2>
-
-            <div class="session">
-                <div class="session-images">
-                    <img src="img/1t.jpg" alt="Session 1">
-                    <img src="img/1tt.jpg" alt="Session 1 Speaker">
-                </div>
-                <h3>한국인공지능협회, 2기 AI 리더 아카데미 개강 – AI 리더 양성의 첫걸음</h3>
-                <p>9월 25일 여의도 FKI타워에서 인공지능 전문가 양성을 목표로 하는 2기 AI 리더 아카데미 개강식을 개최했습니다. 개강식에서 LG AI Research의
-                    임우형 상무는 LG그룹의 자체 AI 모델 엑사원(EXAONE)을 활용한 우수 사례를 소개하며, 이 모델이 국내외로 확산되는 방안을 발표했습니다.
-
-                    임 상무는 AI 연구의 진화가 단순 생성 기능에서 나아가, 미래에는 사실 기반 진단과 자율 실행 AI 에이전트로 발전할 것으로 예상된다고 설명했습니다. AI가 복잡한 인과
-                    관계를 분석하여 물류, 금융, 원자재 가격 등을 예측함으로써 중요한 의사결정에 기여할 것이라는 전망도 제시했습니다. 그는 AI 도입의 핵심은 해결해야 할 문제를 명확히
-                    정의하는 것이라고 강조하며, 문제 정의의 중요성을 강조했습니다.
-
-                    개강식에서 권영우 연수원장은 생성형 AI의 영향력이 커지고 있다며, 이러한 AI 기술을 효과적으로 활용하는 리더가 앞으로 경쟁에서 우위를 점할 것이라고 언급했습니다. AI
-                    리더 아카데미는 이러한 리더를 양성하기 위해 지속적으로 진행될 예정입니다.</p>
-            </div>
-            <br><br><br>
-            <div class="session">
-                <div class="session-images">
-                    <img src="img/2t.jpg" alt="Session 2">
-                    <img src="img/2tt.jpg" alt="Session 2 Speaker">
-                </div>
-                <h3>미래를 선도하는 AI 활용, 리더의 역할부터 시작해야</h3>
-                <p>SK mySUNI의 김지현 부사장은 한국인공지능협회 2기 AI 리더 아카데미 특강에서 AI의 발전이 기업의 미래에 미칠 영향에 대해 발표했습니다. 김 부사장은 특히 COT(Chain
-                    of Thought) 모델의 도입으로 생성형 AI가 한 단계 더 진화했으며, 이는 AI가 복잡한 질문에 대해 중간 풀이 과정까지 제공하는 방식이라고 설명했습니다. 앞으로 인공지능은
-                    LLM(대형 언어 모델)을 넘어 LMM(대형 멀티모달 모델), LAM(거대행동모델) 등 다양한 영역으로 확장될 것으로 전망했습니다.
-
-                    김 부사장은 2025년부터 생성형 AI가 기존 제품과 서비스의 인터페이스를 혁신하며, 대화형 AI가 기업의 변화를 이끌 주요 요소가 될 것이라고 강조했습니다. 이를 위해 기업의
-                    리더들은 AI의 가능성과 한계를 스스로 경험하며 기업 내 AI 활용 전략을 주도적으로 세워야 한다고 강조했습니다. 리더는 AI를 통해 비즈니스 문제를 해결하고 혁신을 도모하는
-                    방법을 모색하는 동시에, 위험 관리와 투자 효율성을 고려하여 적합한 AI 도구를 선택하는 것이 중요하다고 조언했습니다.
-
-                    특강 당일, 판도플랫폼의 정성천 대표가 AI 리더 아카데미 원우회장으로 선출되었으며, 수강생 간의 정보 교류와 네트워킹을 강화하겠다는 의지를 밝혔습니다.</p>
-            </div>
-            <br><br><br>
-
-            <div class="session">
-                <div class="session-images">
-                    <img src="img/3t.jpg" alt="Session 3">
-                    <img src="img/3tt.jpg" alt="Session 3 Speaker">
-                </div>
-                <h3>AI 도입 전략과 성공 사례 특강</h3>
-                <p>포티투마루의 김동환 CEO는 한국인공지능협회 2기 AI 리더 아카데미 특강에서 기업이 AI 도입을 통해 실질적인 성과를 거두려면 우선 기업의 문제를 명확히 파악하고 이를 AI로
-                    해결할 수 있는지 면밀히 분석해야 한다고 강조했습니다. 김 CEO는 AI를 목적이 아닌 수단으로 삼아야 한다며, AI+X 전략보다는 문제 해결을 중심에 두는 X+AI 전략의
-                    중요성을 설명했습니다.
-
-                    강연에서는 조선 해양 분야에서의 AI 설계 시간 단축 사례, 자동차 및 로보틱스 업종의 고장 예측 및 정비 자동화 사례, 보험 상담사의 신속한 고객 응대를 위한 AI 활용 등
-                    다양한 산업별 AI 성공 사례가 소개되었습니다.
-                </p>
-            </div>
-
-            <br><br><br>
-
-            <div class="session">
-                <div class="session-images">
-                    <img src="img/4t.jpg" alt="Session 4">
-                    <img src="img/4tt.jpg" alt="Session 4 Speaker">
-                </div>
-                <h3>한국형 자율주행의 혁신, 마음AI의 WoRV 기술</h3>
-                <p>㈜마음AI의 최홍섭 대표는 한국인공지능협회 2기 AI 리더 아카데미 특강에서, 상황을 스스로 판단하고 엔드투엔드로 주행하는 'WoRV(World model Robotics and
-                    Vehicle control)' 기술을 통해 자율주행 솔루션을 개발하고 있다고 밝혔습니다. WoRV 기술은 기존 규칙 기반의 자율주행 방식이 가진 한계를 극복하며, 시각 정보를
-                    기반으로 투명한 유리나 물웅덩이 등 위험 요소를 인식하고 회피하는 능력을 갖추고 있습니다.
-
-                    기존 자율주행 차량이 라이다(LiDAR) 기술을 사용하여 경로를 그려도 예외 상황에서 어려움을 겪는 것과 달리, WoRV 기반 자율주행차는 맥락을 이해하는 능력으로 모호한 지시도
-                    수행할 수 있습니다. 마음AI는 2025년부터 과수원에서 농약을 뿌리는 자율주행 차량과 같은 다양한 산업분야에 WoRV 기술을 적용할 계획입니다.
-
-                    또한 최 대표는 인간의 노동력을 대체하는 파운데이션 모델의 등장과 AI의 실질적 비즈니스 가치를 강조했습니다. 특히 육체노동의 대체에 큰 잠재력을 지닌 'EAI(Embodied
-                    AI)' 구현을 목표로, AI가 물리적 실체를 통해 환경과 상호작용하는 새로운 패러다임을 구현하고 있다고 설명했습니다.</p>
-            </div>
-
-            <br><br><br>
-
-            <div class="session">
-                <div class="session-images">
-                    <img src="img/5t.jpg" alt="Session 5">
-                    <img src="img/5tt.jpg" alt="Session 5 Speaker">
-                </div>
-                <h3>AI 시대의 리더십: 다양한 관점과 열린 사고의 중요성</h3>
-                <p>㈜멀티캠퍼스의 김대균 이사는 한국인공지능협회 2기 AI 리더 아카데미 특강에서, 인공지능 시대의 리더는 다양한 관점과 열린 사고로 팀을 이끌어야 한다고 강조했습니다. 김 이사는
-                    AI가 인지 처리에서 좌뇌적 역할에 가까우며, 리더는 자신의 한계를 명확히 인식하고 모르는 것을 정확히 인정하는 태도가 중요하다고 설명했습니다.
-
-                    또한, AI 시대의 리더는 문제를 해결할 때 표면에 드러난 현상만으로 답을 찾으려 하기보다는 전체 상황을 먼저 파악하고, 다양한 지식과 경험을 융합해 해결 방안을 모색해야 한다고
-                    조언했습니다. 그는 젊은 직원들에게 동기를 부여하고 다양한 관점을 공유하는 것이 AI를 효과적으로 활용하는 조직 문화를 구축하는 핵심이라고 강조했습니다.</p>
-            </div>
-
-            <br><br><br>
-
-            <div class="session">
-                <div class="session-images">
-                    <img src="img/6t.jpg" alt="Session 6">
-                    <img src="img/6tt.jpg" alt="Session 6 Speaker">
-                </div>
-                <h3>디지털 전환을 통한 기업 수익성 제고 전략</h3>
-                <p>㈜이즈파크의 김갑산 대표는 한국인공지능협회 2기 AI 리더 아카데미 특강에서, 기업이 AI 기반 디지털 전환을 통해 수익성 및 생산성을 강화하는 전략을 소개했습니다. 김 대표는 지속
-                    가능한 성장을 위해 인공지능을 활용한 자동화와 데이터 분석을 통해 기업 운영의 효율성을 높이는 것이 중요하다고 강조했습니다.
-
-                    강연에서는 여러 산업에서의 성공적인 AI 활용 사례가 소개되었습니다. 예를 들어, 제약회사는 RAG(검색 증강 생성) 기술을 도입하여 세금계산서 데이터의 자동 추출과 입력 과정을
-                    완전 자동화함으로써 오류율을 낮추고 시간과 원가를 절감했습니다. 플랫폼 기업은 AI를 통한 업무 자동화로 5년간 10억 원의 비용 절감 효과를 기대하고 있으며, 공공기관은 상담
-                    데이터 자동 생성으로 고품질 서비스를 제공해 고객 만족도를 높이고 있습니다. 제조공정 분야에서는 NC 프로그램의 자동화에 AI를 적용해 초보자도 높은 품질을 유지하며 작업할 수
-                    있도록 함으로써, 인적 오류 감소와 표준 데이터베이스 구축 등의 성과를 이루었습니다.
-
-                    김 대표는 AI 도입 시, 인간의 통제와 책임이 중요하며, 경영진의 장기적 지원이 디지털 전환의 성공을 좌우한다고 언급했습니다.
-                </p>
-            </div>
-
-            <br><br><br>
-
-            <div class="session">
-                <div class="session-images">
-                    <img src="img/7t.jpg" alt="Session 7">
-                    <img src="img/7tt.jpg" alt="Session 7 Speaker">
-                </div>
-                <h3>기업 비용 절감의 열쇠, 인공지능 활용</h3>
-                <p>㈜업스테이지의 최홍준 부사장은 한국인공지능협회 2기 AI 리더 아카데미 특강에서, 성공적인 인공지능 도입을 위해서는 기업 특성에 맞춘 AI 솔루션과 데이터 관리 및 성능 최적화가
-                    필요하다고 강조했습니다. 그는 AI 융합과 전환을 통해 비용 절감을 실현할 수 있는 방법들을 소개했습니다.
-
-                    업스테이지는 디지털 데이터 자산화와 업무 자동화를 목표로 ‘다큐먼트 AI’를 개발해 보급하고 있습니다. 특히, AI OCR의 도입을 통해 문서 데이터를 인식하는 초기 단계를 넘어,
-                    비즈니스 프로세스까지 이해하는 단계로 진화했으며, 나아가 워크플로우 전 과정을 자동화하는 ‘AI OCR + LLM’ 모델로 발전했습니다.
-
-                    보험업계 사례로는 AI OCR 기술을 활용하여 보험 청약 심사 과정을 자동화함으로써 처리 시간을 절반으로 단축하고, 고객 만족도를 높이는 성과를 달성했습니다. 또한 AI 에이전트를
-                    통해 수술 보험금 심사와 같은 고정밀 업무를 자동화하여 시간 절약과 업무 정확도를 동시에 실현했습니다.
-
-                    업스테이지는 태국어 특화 모델을 성공적으로 개발하며, 태국어 학습 데이터셋 구축과 현지 요소를 반영한 고성능 AI 모델을 통해 독보적인 성과를 거두었습니다. 이를 기반으로 향후
-                    동남아 시장으로 확장을 계획하고 있습니다.
-                </p>
-            </div>
-
-            <br><br><br>
-
-            <div class="session">
-                <div class="session-images">
-                    <img src="img/8t.jpg" alt="Session 8">
-                    <img src="img/8tt.jpg" alt="Session 8 Speaker">
-                </div>
-                <h3>지속 가능한 AI 발전을 위한 규제 대응 전략</h3>
-                <p>㈜STA테스팅컨설팅의 권원일 대표는 한국인공지능협회 2기 AI 리더 아카데미 특강에서, 인공지능 기술의 지속적 활용과 성장을 위해서는 규제 대응이 필수적이라고 강조했습니다. 그는
-                    EU를 비롯한 주요 국가들이 인공지능의 윤리적 문제, 인간 기본권 침해 등 우려로 규제를 강화하고 있어, 특히 우리나라의 스타트업들이 이에 잘 대비해야 한다고 설명했습니다.
-
-                    권 대표는 AI 스타트업들이 규제에 대응하기 위한 3단계 전략을 제안했습니다. 첫째, 각 국가의 National Guidelines(국가 안내서)를 철저히 준수하고, 둘째,
-                    국제표준화기구의 AI 경영 인증 시스템인 ISO/IEC 42001 인증을 확보하며, 셋째, EU의 AI 관련 법률(EU AI Act)에 맞춰 철저히 준비하는 것이 필요하다고
-                    조언했습니다.
-
-                    또한, 권 대표는 STA테스팅컨설팅이 AI 스타트업들이 규제 준수를 위한 AI 테스팅 및 컨설팅 서비스를 제공해 규제 대응의 위험을 줄이고, 지속적인 성장을 지원하고 있다고
-                    소개했습니다.
-
-                </p>
-            </div>
-
-
-
-        </div>
-
-
 
     </div>
 
@@ -1267,7 +1280,7 @@
 </script>
 <script>
     function updateCountdown() {
-        const eventDate = new Date("2024-09-20T18:00:00").getTime();
+        const eventDate = new Date("2025-01-31T23:59:59").getTime();
         const now = new Date().getTime();
         const distance = eventDate - now;
 
