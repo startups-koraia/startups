@@ -1,6 +1,4 @@
-<!doctype html>
-<html lang="ko">
-<head>
+<html lang="ko" class="lenis"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta name="generator" content="Framer 904da2c">
@@ -398,9 +396,117 @@
     })();
   </script>
 
-</head>
+<style type="text/css" data-framer-css="true"></style><style>
+#__framer-editorbar-container {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    position: fixed;
+    z-index: calc(2147483647);
+    width: max-content;
+    cursor: pointer;
+}
+
+#__framer-editorbar-label {
+    background-color: #111;
+    border-radius: 8px;
+    font-family: "Inter", "Inter-Regular", system-ui, Arial, sans-serif;
+    font-size: 12px;
+    height: fit-content;
+    opacity: 0;
+    padding: 4px 8px;
+    transition: opacity 0.4s ease-out;
+    font-weight: 500;
+    flex-shrink: 0;
+    position: fixed;
+    width: max-content;
+    pointer-events: none;
+    user-select: none;
+}
+
+#__framer-editorbar-button {
+    all: unset;
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+    flex-shrink: 0;
+}
+
+#__framer-editorbar-label.__framer-editorbar-button-tooltip-visible {
+    opacity: 1;
+}
+
+#__framer-editorbar-label, #__framer-editorbar-button {
+    backdrop-filter: blur(10px);
+    background-color: rgba(34, 34, 34, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(255, 255, 255, 0.15) 0px 0px 0px 1px;
+    color: #fff;
+}
+
+#__framer-editorbar-loading-spinner {
+    width: 12px;
+    height: 12px;
+    -webkit-mask: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAApNJREFUSA2tlUtLlFEYgEe7mtFFQ8NLFBG1SJAwahtiLVy5ceVSEPQH1LZf0Lp9FO1bdYNyI7gyBFcS2kAzilYq3sfxeYZ55Zv6FGfohWfOd97vnPd23u9MXeZoaeb1Q7gPHXAFzsAS5GACxiEPqVKXqs1kmtAPQi+cAtedToz1PJ8ExxPwDl7CAlRImoN7rBiF86ABHTiGAzMIh8n3O+ifwWc4EL0n5TGTYQijvjNSxbUadozInUeGZ3nuh1WYgpIkM+hGMwYajAgdrfUn+AaLoLTCAxiAOxCZxL4RdB+gZMjxEjwHo4hS8Jh5DR9hz0mKaNizegoNEI7Wee6FXJTISG6AUgDr+QImoAiHie+mwZJow/PRps4uwnsnRj8Epqc4voVJJ8eULOtW4BFYYjPpgjc+3IWI2sh/wFeoVl6xYQ48dDGLfjOwc/ygQqz595hUMVouS9QHBm4l6k3HWpnBLqicgVrlCxujSbR1Swd+UDpQYRS/oVaZZ2MWwlZBB9Zdxf+QTYw8SRgq6sAvz7vH6JULEB9USVHFjzZskgPRQR4ayxoXXIdaHdg9HrB2rErByWxZERnYtrWUzD0esDbtTmXPhzXwHrKLxEUbYGbVyDkWWwkdadfqbPmwDXZSCyh2VAf8BM/nOOJH5Y0QopMt2I5U/KO4DZZJB47XwEX+ex0mGroMV8sLwp56gyuGwiyW4SZ4c8bt2cZzO7jBNeqtsRHbeZ1g9krsMbhfYPv/c5gecA+4yAVuitFszE5Hjva872OMdXagF19JIoOYWyozMTI3J0tmA6gLvXPfO1cc/XOqOLe/HbjwD8yCXRD3VNJROEgatiRZMJsKsbZHia3nAdphtq8fkiWyXJbBe8uM1aXKPouNnz2Bm1kwAAAAAElFTkSuQmCC);
+    mask: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAApNJREFUSA2tlUtLlFEYgEe7mtFFQ8NLFBG1SJAwahtiLVy5ceVSEPQH1LZf0Lp9FO1bdYNyI7gyBFcS2kAzilYq3sfxeYZ55Zv6FGfohWfOd97vnPd23u9MXeZoaeb1Q7gPHXAFzsAS5GACxiEPqVKXqs1kmtAPQi+cAtedToz1PJ8ExxPwDl7CAlRImoN7rBiF86ABHTiGAzMIh8n3O+ifwWc4EL0n5TGTYQijvjNSxbUadozInUeGZ3nuh1WYgpIkM+hGMwYajAgdrfUn+AaLoLTCAxiAOxCZxL4RdB+gZMjxEjwHo4hS8Jh5DR9hz0mKaNizegoNEI7Wee6FXJTISG6AUgDr+QImoAiHie+mwZJow/PRps4uwnsnRj8Epqc4voVJJ8eULOtW4BFYYjPpgjc+3IWI2sh/wFeoVl6xYQ48dDGLfjOwc/ygQqz595hUMVouS9QHBm4l6k3HWpnBLqicgVrlCxujSbR1Swd+UDpQYRS/oVaZZ2MWwlZBB9Zdxf+QTYw8SRgq6sAvz7vH6JULEB9USVHFjzZskgPRQR4ayxoXXIdaHdg9HrB2rErByWxZERnYtrWUzD0esDbtTmXPhzXwHrKLxEUbYGbVyDkWWwkdadfqbPmwDXZSCyh2VAf8BM/nOOJH5Y0QopMt2I5U/KO4DZZJB47XwEX+ex0mGroMV8sLwp56gyuGwiyW4SZ4c8bt2cZzO7jBNeqtsRHbeZ1g9krsMbhfYPv/c5gecA+4yAVuitFszE5Hjva872OMdXagF19JIoOYWyozMTI3J0tmA6gLvXPfO1cc/XOqOLe/HbjwD8yCXRD3VNJROEgatiRZMJsKsbZHia3nAdphtq8fkiWyXJbBe8uM1aXKPouNnz2Bm1kwAAAAAElFTkSuQmCC);
+    -webkit-mask-size: 12px;
+    mask-size: 12px;
+    background-color: #fff;
+
+
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-name: __framer-loading-spin;
+    animation-timing-function: linear;
+}
+
+@keyframes __framer-loading-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+</style><style>
+#__framer-editorbar {
+    /* https://sergeyski.com/css-color-scheme-and-iframes-lessons-learned-from-disqus-background-bug */
+    color-scheme: light dark;
+    overflow: hidden;
+    position: fixed;
+    border: none;
+    z-index: calc(2147483647);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    touch-action: manipulation;
+}
+
+@supports (height: 100dvh) {
+    #__framer-editorbar {
+        height: 100dvh;
+    }
+}
+
+#__framer-editorbar.status_hidden {
+    display: none;
+}
+
+#__framer-editorbar.status_visually_hidden {
+    clip-path: circle(1px at calc(100% - 1px) calc(100% - 1px));
+    z-index: calc(2147483647 - 1);
+}
+
+#__framer-editorbar.status_measuring {
+    clip-path: unset;
+}
+</style></head>
 <body>
-  <div id="loading-screen">
+  <div id="loading-screen" style="opacity: 0; display: none;">
     <div class="spinner"></div>
     <p>로딩 중...</p>
   </div>
@@ -435,10 +541,10 @@
     
     <!-- End of bodyStart -->
 	
-	<div id="main" data-framer-hydrate-v2="{&quot;routeId&quot;:&quot;atppc3P5_&quot;,&quot;localeId&quot;:&quot;default&quot;,&quot;breakpoints&quot;:[{&quot;hash&quot;:&quot;epjf54&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 1200px)&quot;},{&quot;hash&quot;:&quot;1n90ssl&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 810px) and (max-width: 1199.98px)&quot;},{&quot;hash&quot;:&quot;1yki1wv&quot;,&quot;mediaQuery&quot;:&quot;(max-width: 809.98px)&quot;},{&quot;hash&quot;:&quot;1kjwutx&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 1200px)&quot;},{&quot;hash&quot;:&quot;1jtl6r4&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 810px) and (max-width: 1199.98px)&quot;},{&quot;hash&quot;:&quot;h7qui&quot;,&quot;mediaQuery&quot;:&quot;(max-width: 809.98px)&quot;}]}" data-framer-ssr-released-at="2026-04-21T12:25:51.093Z" data-framer-page-optimized-at="2026-04-27T04:22:07.064Z" data-framer-generated-page=""><!--$--><style data-framer-html-style="">:root body { background: var(--token-aae92d1e-1be4-447e-8038-565c6944f982, rgb(0, 0, 0)); }</style><div class="framer-A3fyW framer-1kjwutx" data-layout-template="true" style="min-height:100vh;width:auto"><div class="framer-eumtsr-container" data-framer-appear-id="eumtsr" data-framer-layout-hint-center-x="true" style="opacity: 1; transform: translateX(-50%); will-change: transform;"><div class="ssr-variant hidden-h7qui"><nav class="framer-q9lYC framer-OWAph framer-dfm1g framer-v-dfm1g" data-border="true" data-framer-name="Desktop" style="--border-bottom-width: 1px; --border-color: var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34)); --border-left-width: 0px; --border-right-width: 0px; --border-style: solid; --border-top-width: 0px; background-color: var(--token-aae92d1e-1be4-447e-8038-565c6944f982, rgb(0, 0, 0)); width: 100%; opacity: 1;"><div class="framer-213vcd" data-framer-name="Desktop" style="border-radius: 4px; opacity: 1;"><!--$--><a class="framer-mw93t7 framer-1mcr0k" data-framer-name="Logo" data-highlight="true" href="./" tabindex="0" style="opacity: 1;"><div class="framer-1bj2a84" data-framer-name="Image" style="opacity: 1;"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="auto" width="1043" height="257" sizes="(min-width: 1200px) 123px, (min-width: 810px) and (max-width: 1199.98px) 123px, (max-width: 809.98px) max(99px, 123px)" srcset="https://framerusercontent.com/images/qI4Sc1bIFla3Ib5SaMPD36tpIU.png?scale-down-to=512&amp;width=1043&amp;height=257 512w,https://framerusercontent.com/images/qI4Sc1bIFla3Ib5SaMPD36tpIU.png?scale-down-to=1024&amp;width=1043&amp;height=257 1024w,https://framerusercontent.com/images/qI4Sc1bIFla3Ib5SaMPD36tpIU.png?width=1043&amp;height=257 1043w" src="https://framerusercontent.com/images/qI4Sc1bIFla3Ib5SaMPD36tpIU.png?width=1043&amp;height=257" alt="" style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></div></a><!--/$--><div class="framer-1crjnrv" data-framer-name="Container" style="border-radius: 8px; opacity: 1;"><div class="framer-1m1tss8" data-framer-name="Links" style="opacity: 1;"><!--$--><div class="framer-axg5ss-container" style="opacity: 1;"><!--$--><a class="framer-S7jH8 framer-4el2p framer-1fh2yjx framer-v-1fh2yjx framer-16xevj4" data-framer-name="Default" href="./" style="background-color: rgba(0, 0, 0, 0); border-radius: 4px; opacity: 1;"><div class="framer-odcd3z" data-framer-component-type="RichTextContainer" style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-x6ge9v" data-styles-preset="D1fS_zrfW">Home</p></div></a><!--/$--></div><!--/$--><!--$--><div class="framer-x8m3iw-container" style="opacity: 1;"><!--$--><a class="framer-S7jH8 framer-4el2p framer-1fh2yjx framer-v-1fh2yjx framer-16xevj4" data-framer-name="Default" href="./about" style="background-color: rgba(0, 0, 0, 0); border-radius: 4px; opacity: 1;"><div class="framer-odcd3z" data-framer-component-type="RichTextContainer" style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-x6ge9v" data-styles-preset="D1fS_zrfW">Introduce</p></div></a><!--/$--></div><!--/$--></div><div class="framer-1utn9go" data-framer-name="Button" style="opacity: 1;"><div class="framer-1hhz98c-container" style="opacity: 1;"><div class="framer-9pZnQ framer-OWAph framer-7M6Cu framer-4el2p framer-1e5l598 framer-v-1dhrp5e" data-border="true" data-framer-name="Small" style="--border-bottom-width: 1px; --border-color: var(--token-6839e435-35f3-4ab3-b723-e98c27e525bc, rgba(255, 255, 255, 0.1)); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; background-color: rgb(164, 135, 93); border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.15) 0px 0.706592px 0.706592px -0.625px, rgba(0, 0, 0, 0.14) 0px 1.80656px 1.80656px -1.25px, rgba(0, 0, 0, 0.14) 0px 3.62176px 3.62176px -1.875px, rgba(0, 0, 0, 0.13) 0px 6.8656px 6.8656px -2.5px, rgba(0, 0, 0, 0.1) 0px 13.6468px 13.6468px -3.125px, rgba(0, 0, 0, 0.05) 0px 30px 30px -3.75px; opacity: 1;"><div class="framer-1hhkatf" data-framer-name="Text Container" style="opacity: 1;"><div class="framer-15k178i" data-framer-name="1st state" style="opacity: 1;"><div class="framer-1bob7ie" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing: 0px; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-x6ge9v" data-styles-preset="D1fS_zrfW"><!--$--><a class="framer-text framer-styles-preset-1arsep9" data-styles-preset="PeLcf7ehs" href="./contact" data-framer-page-link-current="true">수강신청</a><!--/$--></p></div></div><div class="framer-4obbbk" data-framer-name="2nd state" style="opacity: 1;"><div class="framer-134t9n" data-framer-component-type="RichTextContainer" style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; --framer-paragraph-spacing: 0px; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-x6ge9v" data-styles-preset="D1fS_zrfW">수강신청</p></div></div></div></div></div></div></div></div></nav></div></div><style data-framer-html-style="">html body { background: var(--token-aae92d1e-1be4-447e-8038-565c6944f982, rgb(0, 0, 0)); }</style><div data-framer-root="" class="framer-gqGhM framer-gca6A framer-U9bVq framer-AIo2h framer-epjf54" style="min-height:100vh;width:auto;display:contents"><section class="framer-1dmduvo" data-framer-name="Content"><div class="framer-gkcx11" data-framer-name="Header"><div class="ssr-variant"><div class="framer-u4irpk-container" data-framer-appear-id="u4irpk" style="opacity: 1; transform: none; will-change: transform;"><div class="framer-V5EfO framer-4el2p framer-1fiq0w framer-v-1fiq0w" data-border="true" data-framer-name="Badge" style="--border-bottom-width: 1px; --border-color: var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34)); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; background-color: var(--token-b2fb23d9-6070-4f2d-b3d0-2fe68c4f2aab, rgba(13, 13, 13, 0.8)); border-radius: 6px; opacity: 1;"><div class="framer-1s5abq1" data-framer-component-type="RichTextContainer" style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-x6ge9v" data-styles-preset="D1fS_zrfW">수강 등록</p></div></div></div></div><div class="framer-i4j98n" data-framer-name="Heading+subheading"><div class="ssr-variant hidden-1yki1wv"><div class="framer-1at7hj0" data-framer-component-type="RichTextContainer" style="transform:none"><h2 class="framer-text framer-styles-preset-15k0oiw" data-styles-preset="waKAohxm2" dir="auto" style="--framer-text-alignment:center"><span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">지금</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">바로</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">CAIO</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">in</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">Gwangju</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">2기에</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">합류하세요!</span></h2></div></div><div class="ssr-variant hidden-1yki1wv"><div class="framer-vc2ess" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-trq6qq" data-styles-preset="Qjp1AZZMc"><span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">AI</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">시대,</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">변화를</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">주도할</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">최고</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">의사결정권자를</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">위한</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;"></span><br class="framer-text"><span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: none; will-change: transform;">CAIO</span> <span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: none; will-change: transform;">과정이</span> <span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: none; will-change: transform;">여러분을</span> <span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: none; will-change: transform;">기다립니다.</span> <span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: none; will-change: transform;"></span></p><p class="framer-text framer-styles-preset-trq6qq" data-styles-preset="Qjp1AZZMc"><span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: none; will-change: transform;">AI</span> <span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: none; will-change: transform;">비즈니스</span> <span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: none; will-change: transform;">통찰력을</span> <span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: none; will-change: transform;">강화하고,</span> <span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: none; will-change: transform;"></span><br class="framer-text"><span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: none; will-change: transform;">미래를</span> <span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: none; will-change: transform;">선도하는</span> <span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: translateY(0.0010968px); will-change: transform;">리더십을</span> <span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: translateY(0.0013513px); will-change: transform;">확보할</span> <span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: translateY(0.001665px); will-change: transform;">절호의</span> <span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: translateY(0.0020514px); will-change: transform;">기회를</span> <span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: translateY(0.0025275px); will-change: transform;">놓치지</span> <span style="display: inline-block; opacity: 0.001; filter: blur(10px); transform: translateY(0.0031142px); will-change: transform;">마세요.</span></p></div></div></div></div><div class="framer-30pifu" data-framer-name="Form Container" style="will-change:transform;opacity:0;transform:translateY(50px)"><div class="framer-6csv5o" data-framer-name="Email and phone"><div class="framer-15a1yuw hidden-1yki1wv" data-border="true" data-framer-name="Email"><div class="framer-sq81zl" data-framer-name="Icon and title"><div class="framer-2js1kf-container"><!--$--><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255)); color: var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255)); flex-shrink: 0;"><g color="var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255))" weight="fill"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-8,144H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"></path></g></svg></div><!--/$--></div><div class="framer-1358sm2" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-trq6qq" data-styles-preset="Qjp1AZZMc" style="--framer-text-color:var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255))">E-mail</p></div></div><div class="framer-18ytxkw" data-framer-name="Email address"><div class="framer-1x85pd0" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-16w1u5n" data-styles-preset="csUbUKGQ_" style="--framer-text-alignment:left">info@koraia.org</p></div></div></div><div class="framer-1n2439y" data-border="true" data-framer-name="Phone"><div class="framer-15uwd0o" data-framer-name="Icon and title"><div class="framer-yf3wvz-container"><!--$--><div style="display:contents"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255)); color: var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255)); flex-shrink: 0;"><g color="var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255))" weight="fill"><path d="M231.88,175.08A56.26,56.26,0,0,1,176,224C96.6,224,32,159.4,32,80A56.26,56.26,0,0,1,80.92,24.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,117.39,96c-.18.27-.37.52-.57.77L96,121.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,231.88,175.08Z"></path></g></svg></div><!--/$--></div><div class="framer-1kcxyg2" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-trq6qq" data-styles-preset="Qjp1AZZMc" style="--framer-text-color:var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255))">Phone</p></div></div><div class="framer-1orge6n" data-framer-name="Number"><div class="framer-1yn96l9" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-16w1u5n" data-styles-preset="csUbUKGQ_" dir="auto" style="--framer-text-alignment:left">+82) 062-376-8840</p></div></div></div></div></div><div class="framer-1941b40-container"><!--$--><div class="ssr-variant hidden-1n90ssl"><iframe style="width:100%;height:100%;border:none" srcdoc="
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;style&gt;
+	<div id="main" data-framer-hydrate-v2="{"routeId":"atppc3P5_","localeId":"default","breakpoints":[{"hash":"epjf54","mediaQuery":"(min-width: 1200px)"},{"hash":"1n90ssl","mediaQuery":"(min-width: 810px) and (max-width: 1199.98px)"},{"hash":"1yki1wv","mediaQuery":"(max-width: 809.98px)"},{"hash":"1kjwutx","mediaQuery":"(min-width: 1200px)"},{"hash":"1jtl6r4","mediaQuery":"(min-width: 810px) and (max-width: 1199.98px)"},{"hash":"h7qui","mediaQuery":"(max-width: 809.98px)"}]}" data-framer-ssr-released-at="2026-04-21T12:25:51.093Z" data-framer-page-optimized-at="2026-04-27T04:22:07.064Z" data-framer-generated-page=""><!--$--><style data-framer-html-style="">:root body { background: var(--token-aae92d1e-1be4-447e-8038-565c6944f982, rgb(0, 0, 0)); }</style><div class="framer-A3fyW framer-1kjwutx" data-layout-template="true" style="min-height:100vh;width:auto"><div class="framer-eumtsr-container" data-framer-appear-id="eumtsr" data-framer-layout-hint-center-x="true" style="opacity: 1; transform: translateX(-50%); will-change: transform;"><div class="ssr-variant hidden-h7qui"><nav class="framer-q9lYC framer-OWAph framer-dfm1g framer-v-dfm1g" data-border="true" data-framer-name="Desktop" style="--border-bottom-width: 1px; --border-color: var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34)); --border-left-width: 0px; --border-right-width: 0px; --border-style: solid; --border-top-width: 0px; background-color: var(--token-aae92d1e-1be4-447e-8038-565c6944f982, rgb(0, 0, 0)); width: 100%; opacity: 1;"><div class="framer-213vcd" data-framer-name="Desktop" style="border-radius: 4px; opacity: 1;"><!--$--><a class="framer-mw93t7 framer-1mcr0k" data-framer-name="Logo" data-highlight="true" href="./" tabindex="0" style="opacity: 1;"><div class="framer-1bj2a84" data-framer-name="Image" style="opacity: 1;"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="auto" width="1043" height="257" sizes="(min-width: 1200px) 123px, (min-width: 810px) and (max-width: 1199.98px) 123px, (max-width: 809.98px) max(99px, 123px)" srcset="https://framerusercontent.com/images/qI4Sc1bIFla3Ib5SaMPD36tpIU.png?scale-down-to=512&width=1043&height=257 512w,https://framerusercontent.com/images/qI4Sc1bIFla3Ib5SaMPD36tpIU.png?scale-down-to=1024&width=1043&height=257 1024w,https://framerusercontent.com/images/qI4Sc1bIFla3Ib5SaMPD36tpIU.png?width=1043&height=257 1043w" src="https://framerusercontent.com/images/qI4Sc1bIFla3Ib5SaMPD36tpIU.png?width=1043&height=257" alt="" style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></div></a><!--/$--><div class="framer-1crjnrv" data-framer-name="Container" style="border-radius: 8px; opacity: 1;"><div class="framer-1m1tss8" data-framer-name="Links" style="opacity: 1;"><!--$--><div class="framer-axg5ss-container" style="opacity: 1;"><!--$--><a class="framer-S7jH8 framer-4el2p framer-1fh2yjx framer-v-1fh2yjx framer-16xevj4" data-framer-name="Default" href="./" style="background-color: rgba(0, 0, 0, 0); border-radius: 4px; opacity: 1;"><div class="framer-odcd3z" data-framer-component-type="RichTextContainer" style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-x6ge9v" data-styles-preset="D1fS_zrfW">Home</p></div></a><!--/$--></div><!--/$--><!--$--><div class="framer-x8m3iw-container" style="opacity: 1;"><!--$--><a class="framer-S7jH8 framer-4el2p framer-1fh2yjx framer-v-1fh2yjx framer-16xevj4" data-framer-name="Default" href="./about" style="background-color: rgba(0, 0, 0, 0); border-radius: 4px; opacity: 1;"><div class="framer-odcd3z" data-framer-component-type="RichTextContainer" style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-x6ge9v" data-styles-preset="D1fS_zrfW">Introduce</p></div></a><!--/$--></div><!--/$--></div><div class="framer-1utn9go" data-framer-name="Button" style="opacity: 1;"><div class="framer-1hhz98c-container" style="opacity: 1;"><div class="framer-9pZnQ framer-OWAph framer-7M6Cu framer-4el2p framer-1e5l598 framer-v-1dhrp5e" data-border="true" data-framer-name="Small" style="--border-bottom-width: 1px; --border-color: var(--token-6839e435-35f3-4ab3-b723-e98c27e525bc, rgba(255, 255, 255, 0.1)); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; background-color: rgb(164, 135, 93); border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.15) 0px 0.706592px 0.706592px -0.625px, rgba(0, 0, 0, 0.14) 0px 1.80656px 1.80656px -1.25px, rgba(0, 0, 0, 0.14) 0px 3.62176px 3.62176px -1.875px, rgba(0, 0, 0, 0.13) 0px 6.8656px 6.8656px -2.5px, rgba(0, 0, 0, 0.1) 0px 13.6468px 13.6468px -3.125px, rgba(0, 0, 0, 0.05) 0px 30px 30px -3.75px; opacity: 1;"><div class="framer-1hhkatf" data-framer-name="Text Container" style="opacity: 1;"><div class="framer-15k178i" data-framer-name="1st state" style="opacity: 1;"><div class="framer-1bob7ie" data-framer-component-type="RichTextContainer" style="--framer-paragraph-spacing: 0px; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-x6ge9v" data-styles-preset="D1fS_zrfW"><!--$--><a class="framer-text framer-styles-preset-1arsep9" data-styles-preset="PeLcf7ehs" href="./contact" data-framer-page-link-current="true">수강신청</a><!--/$--></p></div></div><div class="framer-4obbbk" data-framer-name="2nd state" style="opacity: 1;"><div class="framer-134t9n" data-framer-component-type="RichTextContainer" style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; --framer-paragraph-spacing: 0px; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-x6ge9v" data-styles-preset="D1fS_zrfW">수강신청</p></div></div></div></div></div></div></div></div></nav></div></div><style data-framer-html-style="">html body { background: var(--token-aae92d1e-1be4-447e-8038-565c6944f982, rgb(0, 0, 0)); }</style><div data-framer-root="" class="framer-gqGhM framer-gca6A framer-U9bVq framer-AIo2h framer-epjf54" style="min-height:100vh;width:auto;display:contents"><section class="framer-1dmduvo" data-framer-name="Content"><div class="framer-gkcx11" data-framer-name="Header"><div class="ssr-variant"><div class="framer-u4irpk-container" data-framer-appear-id="u4irpk" style="opacity: 1; transform: none; will-change: transform;"><div class="framer-V5EfO framer-4el2p framer-1fiq0w framer-v-1fiq0w" data-border="true" data-framer-name="Badge" style="--border-bottom-width: 1px; --border-color: var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34)); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; background-color: var(--token-b2fb23d9-6070-4f2d-b3d0-2fe68c4f2aab, rgba(13, 13, 13, 0.8)); border-radius: 6px; opacity: 1;"><div class="framer-1s5abq1" data-framer-component-type="RichTextContainer" style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-x6ge9v" data-styles-preset="D1fS_zrfW">수강 등록</p></div></div></div></div><div class="framer-i4j98n" data-framer-name="Heading+subheading"><div class="ssr-variant hidden-1yki1wv"><div class="framer-1at7hj0" data-framer-component-type="RichTextContainer" style="transform:none"><h2 class="framer-text framer-styles-preset-15k0oiw" data-styles-preset="waKAohxm2" dir="auto" style="--framer-text-alignment:center"><span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">지금</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">바로</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">CAIO</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">in</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">Gwangju</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">2기에</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">합류하세요!</span></h2></div></div><div class="ssr-variant hidden-1yki1wv"><div class="framer-vc2ess" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-trq6qq" data-styles-preset="Qjp1AZZMc"><span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">AI</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">시대,</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">변화를</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">주도할</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">최고</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">의사결정권자를</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">위한</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;"></span><br class="framer-text"><span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">CAIO</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">과정이</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">여러분을</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">기다립니다.</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;"></span></p><p class="framer-text framer-styles-preset-trq6qq" data-styles-preset="Qjp1AZZMc"><span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">AI</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">비즈니스</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">통찰력을</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">강화하고,</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;"></span><br class="framer-text"><span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">미래를</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">선도하는</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">리더십을</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">확보할</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">절호의</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">기회를</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">놓치지</span> <span style="display: inline-block; opacity: 1; filter: blur(0px); transform: none; will-change: transform;">마세요.</span></p></div></div></div></div><div class="framer-30pifu" data-framer-name="Form Container" style="will-change: transform; opacity: 1; transform: none;"><div class="framer-6csv5o" data-framer-name="Email and phone"><div class="framer-15a1yuw hidden-1yki1wv" data-border="true" data-framer-name="Email"><div class="framer-sq81zl" data-framer-name="Icon and title"><div class="framer-2js1kf-container"><div style="display: contents;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255)); color: var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255)); flex-shrink: 0;"><g color="var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255))" weight="fill"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-8,144H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"></path></g></svg></div></div><div class="framer-1358sm2" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-trq6qq" data-styles-preset="Qjp1AZZMc" style="--framer-text-color:var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255))">E-mail</p></div></div><div class="framer-18ytxkw" data-framer-name="Email address"><div class="framer-1x85pd0" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-16w1u5n" data-styles-preset="csUbUKGQ_" style="--framer-text-alignment:left">info@koraia.org</p></div></div></div><div class="framer-1n2439y" data-border="true" data-framer-name="Phone"><div class="framer-15uwd0o" data-framer-name="Icon and title"><div class="framer-yf3wvz-container"><div style="display: contents;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" color="var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255))" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255)); color: var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255)); flex-shrink: 0;"><g color="var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255))" weight="fill"><path d="M231.88,175.08A56.26,56.26,0,0,1,176,224C96.6,224,32,159.4,32,80A56.26,56.26,0,0,1,80.92,24.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,117.39,96c-.18.27-.37.52-.57.77L96,121.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,231.88,175.08Z"></path></g></svg></div></div><div class="framer-1kcxyg2" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-trq6qq" data-styles-preset="Qjp1AZZMc" style="--framer-text-color:var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255))">Phone</p></div></div><div class="framer-1orge6n" data-framer-name="Number"><div class="framer-1yn96l9" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text framer-styles-preset-16w1u5n" data-styles-preset="csUbUKGQ_" dir="auto" style="--framer-text-alignment:left">+82) 062-376-8840</p></div></div></div></div></div><div class="framer-1941b40-container"><!--$--><div class="ssr-variant hidden-1n90ssl"><iframe style="width:100%;height:100%;border:none" srcdoc="
+<html>
+    <head>
+        <style>
             html, body {
                 margin: 0;
                 padding: 0;
@@ -468,22 +574,22 @@
                 font-size: 12px;
                 font-family: sans-serif;
             }
-        &lt;/style&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;ko&quot;&gt;
+        </style>
+    </head>
+    <body>
+        <!DOCTYPE html>
+<html lang="ko">
 
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;script src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
-    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
-    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&amp;display=swap&quot;
-        rel=&quot;stylesheet&quot;&gt;
-    &lt;style&gt;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -597,185 +703,185 @@
                 box-shadow: inset 0px 0px 0px 50px #5F97CF;
             }
         }
-    &lt;/style&gt;
-&lt;/head&gt;
+    </style>
+</head>
 
-&lt;body class=&quot;text-white min-h-screen flex justify-center p-2 sm:p-4 py-6 sm:py-12 md:py-16&quot;&gt;
+<body class="text-white min-h-screen flex justify-center p-2 sm:p-4 py-6 sm:py-12 md:py-16">
 
-    &lt;div id=&quot;formContainer&quot;
-        class=&quot;w-full max-w-4xl mx-auto bg-[#0a0a0a] backdrop-blur-sm p-4 sm:p-6 md:p-8 lg:p-12 rounded-2xl shadow-2xl border border-white/10&quot;&gt;
+    <div id="formContainer"
+        class="w-full max-w-4xl mx-auto bg-[#0a0a0a] backdrop-blur-sm p-4 sm:p-6 md:p-8 lg:p-12 rounded-2xl shadow-2xl border border-white/10">
 
-        &lt;div class=&quot;text-center mb-12&quot;&gt;
-            &lt;h1 class=&quot;text-2xl sm:text-3xl md:text-5xl font-bold text-[#5F97CF] tracking-tight&quot;&gt;CAIO Leader Academy
-            &lt;/h1&gt;
-            &lt;p class=&quot;text-[#A4875D] mt-4 text-lg font-medium&quot;&gt;CAIO과정 in Gwangju 2기 신청이 마감되었습니다.&lt;/p&gt;
-        &lt;/div&gt;
+        <div class="text-center mb-12">
+            <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold text-[#5F97CF] tracking-tight">CAIO Leader Academy
+            </h1>
+            <p class="text-[#A4875D] mt-4 text-lg font-medium">CAIO과정 in Gwangju 2기 신청이 마감되었습니다.</p>
+        </div>
 
-        &lt;form id=&quot;registrationForm&quot;&gt;
-            &lt;div class=&quot;grid grid-cols-1 lg:grid-cols-2 gap-6&quot;&gt;
+        <form id="registrationForm">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
-                &lt;div class=&quot;input-group&quot;&gt;
-                    &lt;div class=&quot;input-group-icon&quot;&gt;
-                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;
-                            stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;
-                            &lt;rect width=&quot;16&quot; height=&quot;20&quot; x=&quot;4&quot; y=&quot;2&quot; rx=&quot;2&quot; /&gt;
-                            &lt;line x1=&quot;9&quot; x2=&quot;15&quot; y1=&quot;22&quot; y2=&quot;22&quot; /&gt;
-                            &lt;line x1=&quot;8&quot; x2=&quot;8&quot; y1=&quot;6&quot; y2=&quot;6&quot; /&gt;
-                            &lt;line x1=&quot;12&quot; x2=&quot;12&quot; y1=&quot;6&quot; y2=&quot;6&quot; /&gt;
-                            &lt;line x1=&quot;16&quot; x2=&quot;16&quot; y1=&quot;6&quot; y2=&quot;6&quot; /&gt;
-                            &lt;line x1=&quot;8&quot; x2=&quot;8&quot; y1=&quot;10&quot; y2=&quot;10&quot; /&gt;
-                            &lt;line x1=&quot;12&quot; x2=&quot;12&quot; y1=&quot;10&quot; y2=&quot;10&quot; /&gt;
-                            &lt;line x1=&quot;16&quot; x2=&quot;16&quot; y1=&quot;10&quot; y2=&quot;10&quot; /&gt;
-                            &lt;line x1=&quot;8&quot; x2=&quot;8&quot; y1=&quot;14&quot; y2=&quot;14&quot; /&gt;
-                            &lt;line x1=&quot;12&quot; x2=&quot;12&quot; y1=&quot;14&quot; y2=&quot;14&quot; /&gt;
-                            &lt;line x1=&quot;16&quot; x2=&quot;16&quot; y1=&quot;14&quot; y2=&quot;14&quot; /&gt;
-                            &lt;line x1=&quot;8&quot; x2=&quot;8&quot; y1=&quot;18&quot; y2=&quot;18&quot; /&gt;
-                            &lt;line x1=&quot;12&quot; x2=&quot;12&quot; y1=&quot;18&quot; y2=&quot;18&quot; /&gt;
-                            &lt;line x1=&quot;16&quot; x2=&quot;16&quot; y1=&quot;18&quot; y2=&quot;18&quot; /&gt;
-                        &lt;/svg&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;input-group-content&quot;&gt;
-                        &lt;label for=&quot;companyName&quot; class=&quot;input-group-label&quot;&gt;기업명&lt;/label&gt;
-                        &lt;input type=&quot;text&quot; id=&quot;companyName&quot; name=&quot;companyName&quot; class=&quot;input-group-input&quot;
-                            placeholder=&quot;회사 이름을 입력하세요&quot; required&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
+                <div class="input-group">
+                    <div class="input-group-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="16" height="20" x="4" y="2" rx="2" />
+                            <line x1="9" x2="15" y1="22" y2="22" />
+                            <line x1="8" x2="8" y1="6" y2="6" />
+                            <line x1="12" x2="12" y1="6" y2="6" />
+                            <line x1="16" x2="16" y1="6" y2="6" />
+                            <line x1="8" x2="8" y1="10" y2="10" />
+                            <line x1="12" x2="12" y1="10" y2="10" />
+                            <line x1="16" x2="16" y1="10" y2="10" />
+                            <line x1="8" x2="8" y1="14" y2="14" />
+                            <line x1="12" x2="12" y1="14" y2="14" />
+                            <line x1="16" x2="16" y1="14" y2="14" />
+                            <line x1="8" x2="8" y1="18" y2="18" />
+                            <line x1="12" x2="12" y1="18" y2="18" />
+                            <line x1="16" x2="16" y1="18" y2="18" />
+                        </svg>
+                    </div>
+                    <div class="input-group-content">
+                        <label for="companyName" class="input-group-label">기업명</label>
+                        <input type="text" id="companyName" name="companyName" class="input-group-input"
+                            placeholder="회사 이름을 입력하세요" required>
+                    </div>
+                </div>
 
-                &lt;div class=&quot;input-group&quot;&gt;
-                    &lt;div class=&quot;input-group-icon&quot;&gt;
-                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;
-                            stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;
-                            &lt;path d=&quot;M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2&quot; /&gt;
-                            &lt;circle cx=&quot;12&quot; cy=&quot;7&quot; r=&quot;4&quot; /&gt;
-                        &lt;/svg&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;input-group-content&quot;&gt;
-                        &lt;label for=&quot;fullName&quot; class=&quot;input-group-label&quot;&gt;성함&lt;/label&gt;
-                        &lt;input type=&quot;text&quot; id=&quot;fullName&quot; name=&quot;fullName&quot; class=&quot;input-group-input&quot;
-                            placeholder=&quot;이름을 입력하세요&quot; required&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
+                <div class="input-group">
+                    <div class="input-group-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                    </div>
+                    <div class="input-group-content">
+                        <label for="fullName" class="input-group-label">성함</label>
+                        <input type="text" id="fullName" name="fullName" class="input-group-input"
+                            placeholder="이름을 입력하세요" required>
+                    </div>
+                </div>
 
-                &lt;div class=&quot;input-group&quot;&gt;
-                    &lt;div class=&quot;input-group-icon&quot;&gt;
-                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;
-                            stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;
-                            &lt;path d=&quot;M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16&quot; /&gt;
-                            &lt;rect width=&quot;20&quot; height=&quot;14&quot; x=&quot;2&quot; y=&quot;6&quot; rx=&quot;2&quot; /&gt;
-                        &lt;/svg&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;input-group-content&quot;&gt;
-                        &lt;label for=&quot;position&quot; class=&quot;input-group-label&quot;&gt;직급&lt;/label&gt;
-                        &lt;input type=&quot;text&quot; id=&quot;position&quot; name=&quot;position&quot; class=&quot;input-group-input&quot;
-                            placeholder=&quot;직급을 입력하세요&quot; required&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
+                <div class="input-group">
+                    <div class="input-group-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                            <rect width="20" height="14" x="2" y="6" rx="2" />
+                        </svg>
+                    </div>
+                    <div class="input-group-content">
+                        <label for="position" class="input-group-label">직급</label>
+                        <input type="text" id="position" name="position" class="input-group-input"
+                            placeholder="직급을 입력하세요" required>
+                    </div>
+                </div>
 
-                &lt;div class=&quot;input-group&quot;&gt;
-                    &lt;div class=&quot;input-group-icon&quot;&gt;
-                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;
-                            stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;
-                            &lt;path
-                                d=&quot;M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.28-2.28a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z&quot; /&gt;
-                        &lt;/svg&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;input-group-content&quot;&gt;
-                        &lt;label for=&quot;contact&quot; class=&quot;input-group-label&quot;&gt;연락처&lt;/label&gt;
-                        &lt;input type=&quot;tel&quot; id=&quot;contact&quot; name=&quot;contact&quot; class=&quot;input-group-input&quot;
-                            placeholder=&quot;010-1234-5678&quot; required&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
+                <div class="input-group">
+                    <div class="input-group-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.28-2.28a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                    </div>
+                    <div class="input-group-content">
+                        <label for="contact" class="input-group-label">연락처</label>
+                        <input type="tel" id="contact" name="contact" class="input-group-input"
+                            placeholder="010-1234-5678" required>
+                    </div>
+                </div>
 
-                &lt;div class=&quot;lg:col-span-2 input-group&quot;&gt;
-                    &lt;div class=&quot;input-group-icon&quot;&gt;
-                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;
-                            stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;
-                            &lt;rect width=&quot;20&quot; height=&quot;16&quot; x=&quot;2&quot; y=&quot;4&quot; rx=&quot;2&quot; /&gt;
-                            &lt;path d=&quot;m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7&quot; /&gt;
-                        &lt;/svg&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;input-group-content&quot;&gt;
-                        &lt;label for=&quot;email&quot; class=&quot;input-group-label&quot;&gt;이메일&lt;/label&gt;
-                        &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; class=&quot;input-group-input&quot;
-                            placeholder=&quot;email@example.com&quot; required&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
+                <div class="lg:col-span-2 input-group">
+                    <div class="input-group-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                    </div>
+                    <div class="input-group-content">
+                        <label for="email" class="input-group-label">이메일</label>
+                        <input type="email" id="email" name="email" class="input-group-input"
+                            placeholder="email@example.com" required>
+                    </div>
+                </div>
 
-                &lt;div class=&quot;lg:col-span-2 input-group&quot;&gt;
-                    &lt;div class=&quot;input-group-icon&quot;&gt;
-                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;
-                            stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;
-                            &lt;path d=&quot;M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2&quot; /&gt;
-                            &lt;circle cx=&quot;9&quot; cy=&quot;7&quot; r=&quot;4&quot; /&gt;
-                            &lt;line x1=&quot;19&quot; x2=&quot;19&quot; y1=&quot;8&quot; y2=&quot;14&quot; /&gt;
-                            &lt;line x1=&quot;16&quot; x2=&quot;22&quot; y1=&quot;11&quot; y2=&quot;11&quot; /&gt;
-                        &lt;/svg&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;input-group-content&quot;&gt;
-                        &lt;label for=&quot;referrer&quot; class=&quot;input-group-label&quot;&gt;추천인 (선택)&lt;/label&gt;
-                        &lt;input type=&quot;text&quot; id=&quot;referrer&quot; name=&quot;referrer&quot; class=&quot;input-group-input&quot;
-                            placeholder=&quot;추천인이 있다면 입력하세요&quot;&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
+                <div class="lg:col-span-2 input-group">
+                    <div class="input-group-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <line x1="19" x2="19" y1="8" y2="14" />
+                            <line x1="16" x2="22" y1="11" y2="11" />
+                        </svg>
+                    </div>
+                    <div class="input-group-content">
+                        <label for="referrer" class="input-group-label">추천인 (선택)</label>
+                        <input type="text" id="referrer" name="referrer" class="input-group-input"
+                            placeholder="추천인이 있다면 입력하세요">
+                    </div>
+                </div>
 
-                &lt;div class=&quot;lg:col-span-2 input-group textarea&quot;&gt;
-                    &lt;div class=&quot;input-group-icon&quot;&gt;
-                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;
-                            stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;
-                            &lt;path d=&quot;m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z&quot; /&gt;
-                        &lt;/svg&gt;
-                    &lt;/div&gt;
-                    &lt;div class=&quot;input-group-content&quot;&gt;
-                        &lt;label for=&quot;comments&quot; class=&quot;input-group-label&quot;&gt;그 외 하고싶은 말씀 (선택)&lt;/label&gt;
-                        &lt;textarea id=&quot;comments&quot; name=&quot;comments&quot; rows=&quot;4&quot; class=&quot;input-group-input resize-none&quot;
-                            placeholder=&quot;문의사항이나 전달하고 싶은 내용을 자유롭게 작성해주세요.&quot;&gt;&lt;/textarea&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
+                <div class="lg:col-span-2 input-group textarea">
+                    <div class="input-group-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z" />
+                        </svg>
+                    </div>
+                    <div class="input-group-content">
+                        <label for="comments" class="input-group-label">그 외 하고싶은 말씀 (선택)</label>
+                        <textarea id="comments" name="comments" rows="4" class="input-group-input resize-none"
+                            placeholder="문의사항이나 전달하고 싶은 내용을 자유롭게 작성해주세요."></textarea>
+                    </div>
+                </div>
+            </div>
 
-            &lt;div id=&quot;statusMessage&quot; class=&quot;mt-8 text-center text-lg font-medium h-8&quot; role=&quot;alert&quot;&gt;&lt;/div&gt;
+            <div id="statusMessage" class="mt-8 text-center text-lg font-medium h-8" role="alert"></div>
 
-            &lt;div class=&quot;mt-8 text-center&quot;&gt;
-                &lt;button type=&quot;submit&quot; disabled id=&quot;submitButton&quot; class=&quot;btn-submit w-full sm:w-2/3 lg:w-1/2&quot;&gt;
+            <div class="mt-8 text-center">
+                <button type="submit" disabled id="submitButton" class="btn-submit w-full sm:w-2/3 lg:w-1/2">
                     신청 마감
-                &lt;/button&gt;
-            &lt;/div&gt;
-        &lt;/form&gt;
-    &lt;/div&gt;
+                </button>
+            </div>
+        </form>
+    </div>
 
-    &lt;div id=&quot;successOverlay&quot;
-        class=&quot;hidden fixed inset-0 bg-black/95 flex flex-col items-center justify-center text-center p-4 z-50&quot;&gt;
-        &lt;svg class=&quot;checkmark mb-8&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 52 52&quot;&gt;
-            &lt;circle class=&quot;checkmark__circle&quot; cx=&quot;26&quot; cy=&quot;26&quot; r=&quot;25&quot; fill=&quot;none&quot; /&gt;
-            &lt;path class=&quot;checkmark__check&quot; fill=&quot;none&quot; stroke=&quot;#fff&quot; stroke-width=&quot;3&quot;
-                d=&quot;M14.1 27.2l7.1 7.2 16.7-16.8&quot; /&gt;
-        &lt;/svg&gt;
-        &lt;h2 class=&quot;text-3xl md:text-4xl font-bold text-[#5F97CF]&quot;&gt;접수가 완료되었습니다!&lt;/h2&gt;
-        &lt;p class=&quot;text-gray-300 mt-4 text-xl&quot;&gt;CAIO 리더 아카데미에 관심을 가져주셔서 감사합니다. 이메일을 확인해주세요.&lt;/p&gt;
-        &lt;button onclick=&quot;location.reload()&quot; class=&quot;mt-10 text-[#A4875D] hover:text-[#5F97CF] transition-colors&quot;&gt;새로
-            신청하기&lt;/button&gt;
-    &lt;/div&gt;
+    <div id="successOverlay"
+        class="hidden fixed inset-0 bg-black/95 flex flex-col items-center justify-center text-center p-4 z-50">
+        <svg class="checkmark mb-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+            <path class="checkmark__check" fill="none" stroke="#fff" stroke-width="3"
+                d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+        </svg>
+        <h2 class="text-3xl md:text-4xl font-bold text-[#5F97CF]">접수가 완료되었습니다!</h2>
+        <p class="text-gray-300 mt-4 text-xl">CAIO 리더 아카데미에 관심을 가져주셔서 감사합니다. 이메일을 확인해주세요.</p>
+        <button onclick="location.reload()" class="mt-10 text-[#A4875D] hover:text-[#5F97CF] transition-colors">새로
+            신청하기</button>
+    </div>
 
 
-    &lt;div id=&quot;confirmModal&quot;
-        class=&quot;hidden fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 z-50&quot;&gt;
-        &lt;div class=&quot;bg-[#111] border border-white/20 w-full max-w-md rounded-2xl p-6 shadow-2xl&quot;&gt;
-            &lt;h3 class=&quot;text-xl font-bold text-[#5F97CF] mb-4 border-b border-white/10 pb-2&quot;&gt;신청 내용 확인&lt;/h3&gt;
+    <div id="confirmModal"
+        class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 z-50">
+        <div class="bg-[#111] border border-white/20 w-full max-w-md rounded-2xl p-6 shadow-2xl">
+            <h3 class="text-xl font-bold text-[#5F97CF] mb-4 border-b border-white/10 pb-2">신청 내용 확인</h3>
 
-            &lt;div id=&quot;confirmDetails&quot; class=&quot;space-y-3 text-gray-300 text-sm mb-8&quot;&gt;
-            &lt;/div&gt;
+            <div id="confirmDetails" class="space-y-3 text-gray-300 text-sm mb-8">
+            </div>
 
-            &lt;div class=&quot;flex gap-3&quot;&gt;
-                &lt;button id=&quot;cancelBtn&quot;
-                    class=&quot;flex-1 py-3 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors&quot;&gt;수정하기&lt;/button&gt;
-                &lt;button id=&quot;finalSubmitBtn&quot;
-                    class=&quot;flex-1 py-3 rounded-lg bg-[#5F97CF] hover:bg-[#4a82b8] font-bold transition-all&quot;&gt;최종
-                    제출&lt;/button&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+            <div class="flex gap-3">
+                <button id="cancelBtn"
+                    class="flex-1 py-3 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors">수정하기</button>
+                <button id="finalSubmitBtn"
+                    class="flex-1 py-3 rounded-lg bg-[#5F97CF] hover:bg-[#4a82b8] font-bold transition-all">최종
+                    제출</button>
+            </div>
+        </div>
+    </div>
 
-    &lt;script&gt;
+    <script>
         // 1. 초기 설정 (변수명 충돌 방지를 위해 supabaseClient 사용)
         const supabaseUrl = 'https://kydkwdwtsqsjxasirxoi.supabase.co';
         const supabaseKey = 'sb_publishable_8s2AtTlUWOaLtiOvdsH7jQ_t7gVjUCM';
@@ -816,23 +922,23 @@
 
             if (confirmDetails) {
                 confirmDetails.innerHTML = `
-                &lt;div class=&quot;flex justify-between border-b border-white/5 pb-1&quot;&gt;&lt;span class=&quot;text-gray-500&quot;&gt;기업명:&lt;/span&gt; &lt;span&gt;${cachedFormData.companyName}&lt;/span&gt;&lt;/div&gt;
-                &lt;div class=&quot;flex justify-between border-b border-white/5 pb-1&quot;&gt;&lt;span class=&quot;text-gray-500&quot;&gt;성함:&lt;/span&gt; &lt;span&gt;${cachedFormData.fullName}&lt;/span&gt;&lt;/div&gt;
-                &lt;div class=&quot;flex justify-between border-b border-white/5 pb-1&quot;&gt;&lt;span class=&quot;text-gray-500&quot;&gt;직급:&lt;/span&gt; &lt;span&gt;${cachedFormData.position}&lt;/span&gt;&lt;/div&gt;
-                &lt;div class=&quot;flex justify-between border-b border-white/5 pb-1&quot;&gt;&lt;span class=&quot;text-gray-500&quot;&gt;연락처:&lt;/span&gt; &lt;span&gt;${cachedFormData.contact}&lt;/span&gt;&lt;/div&gt;
-                &lt;div class=&quot;flex justify-between border-b border-white/5 pb-1&quot;&gt;&lt;span class=&quot;text-gray-500&quot;&gt;이메일:&lt;/span&gt; &lt;span&gt;${cachedFormData.email}&lt;/span&gt;&lt;/div&gt;
-                &lt;div class=&quot;mt-2 text-gray-500&quot;&gt;문의사항:&lt;/div&gt;
-                &lt;div class=&quot;bg-white/5 p-2 rounded mt-1 text-xs text-gray-400&quot;&gt;${cachedFormData.comments}&lt;/div&gt;
+                <div class="flex justify-between border-b border-white/5 pb-1"><span class="text-gray-500">기업명:</span> <span>${cachedFormData.companyName}</span></div>
+                <div class="flex justify-between border-b border-white/5 pb-1"><span class="text-gray-500">성함:</span> <span>${cachedFormData.fullName}</span></div>
+                <div class="flex justify-between border-b border-white/5 pb-1"><span class="text-gray-500">직급:</span> <span>${cachedFormData.position}</span></div>
+                <div class="flex justify-between border-b border-white/5 pb-1"><span class="text-gray-500">연락처:</span> <span>${cachedFormData.contact}</span></div>
+                <div class="flex justify-between border-b border-white/5 pb-1"><span class="text-gray-500">이메일:</span> <span>${cachedFormData.email}</span></div>
+                <div class="mt-2 text-gray-500">문의사항:</div>
+                <div class="bg-white/5 p-2 rounded mt-1 text-xs text-gray-400">${cachedFormData.comments}</div>
             `;
                 confirmModal.classList.remove('hidden');
             }
         });
 
         // 3. 수정하기 버튼
-        cancelBtn.addEventListener('click', () =&gt; confirmModal.classList.add('hidden'));
+        cancelBtn.addEventListener('click', () => confirmModal.classList.add('hidden'));
 
         // 4. [최종 제출] 버튼 클릭 시 DB 저장 + Edge Function 실행
-        finalSubmitBtn.addEventListener('click', async () =&gt; {
+        finalSubmitBtn.addEventListener('click', async () => {
             finalSubmitBtn.disabled = true;
             finalSubmitBtn.textContent = '처리 중...';
 
@@ -852,7 +958,7 @@
                         position: cachedFormData.position,
                         contact: cachedFormData.contact,
                         email: cachedFormData.email,
-                        location: cachedFormData.location || &quot;광주&quot;,
+                        location: cachedFormData.location || "광주",
                         referrer: cachedFormData.referrer,
                         comments: cachedFormData.comments
                     })
@@ -862,7 +968,7 @@
 
                 if (!response.ok) {
                     // 30초 제한(429) 에러 처리
-                    throw new Error(result.error || &quot;제출 중 오류가 발생했습니다.&quot;);
+                    throw new Error(result.error || "제출 중 오류가 발생했습니다.");
                 }
 
                 // 성공 시 즉시 UI 변경 (이메일 발송 완료를 기다리지 않음)
@@ -879,30 +985,30 @@
         });
 
         // 휴대폰 번호 포맷팅 (기존 코드 유지)
-        document.getElementById('contact').addEventListener('input', (e) =&gt; {
+        document.getElementById('contact').addEventListener('input', (e) => {
             let val = e.target.value.replace(/[^0-9]/g, '');
-            if (val.length &gt; 11) val = val.substring(0, 11);
+            if (val.length > 11) val = val.substring(0, 11);
             let result = '';
-            if (val.length &lt; 4) result = val;
-            else if (val.length &lt; 7) result = val.substr(0, 3) + '-' + val.substr(3);
-            else if (val.length &lt; 11) result = val.substr(0, 3) + '-' + val.substr(3, 3) + '-' + val.substr(6);
+            if (val.length < 4) result = val;
+            else if (val.length < 7) result = val.substr(0, 3) + '-' + val.substr(3);
+            else if (val.length < 11) result = val.substr(0, 3) + '-' + val.substr(3, 3) + '-' + val.substr(6);
             else result = val.substr(0, 3) + '-' + val.substr(3, 4) + '-' + val.substr(7);
             e.target.value = result;
         });
-    &lt;/script&gt;
-&lt;/body&gt;
+    </script>
+</body>
 
-&lt;/html&gt;
-        &lt;script type=&quot;module&quot;&gt;
+</html>
+        <script type="module">
             let height = 0
 
             function sendEmbedHeight() {
                 window.parent.postMessage({
                     embedHeight: height
-                }, &quot;*&quot;)
+                }, "*")
             }
 
-            const observer = new ResizeObserver((entries) =&gt; {
+            const observer = new ResizeObserver((entries) => {
                 if (entries.length !== 1) return
                 const entry = entries[0]
                 if (entry.target !== document.body) return
@@ -913,15 +1019,15 @@
 
             observer.observe(document.body)
 
-            window.addEventListener(&quot;message&quot;, (event) =&gt; {
+            window.addEventListener("message", (event) => {
                 if (event.source !== window.parent) return
-                if (event.data !== &quot;getEmbedHeight&quot;) return
+                if (event.data !== "getEmbedHeight") return
                 sendEmbedHeight()
             })
-        &lt;/script&gt;
-    &lt;body&gt;
-&lt;/html&gt;
-"></iframe></div><!--/$--></div><div class="framer-160wbsy" data-framer-name="Heading+subheading"><div class="framer-15lx39z" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text">test</p></div></div></section><div class="framer-197xdqf-container"><!--$--><div></div><!--/$--></div></div><div id="overlay"></div><div class="framer-1vlob5l"></div><div class="framer-ynm0sg-container"><div class="ssr-variant hidden-h7qui"><footer class="framer-C2Dqh framer-AIo2h framer-gl77ky framer-v-gl77ky" data-border="true" data-framer-name="Footer" style="--border-bottom-width: 0px; --border-color: var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34)); --border-left-width: 0px; --border-right-width: 0px; --border-style: solid; --border-top-width: 2px; background: radial-gradient(50% 50% at 50% 3.4%, rgba(95, 151, 207, 0.5) 0%, rgba(171, 171, 171, 0) 100%); width: 100%; opacity: 1;"><div class="framer-1e86zuq" data-framer-name="Container" style="opacity: 1;"><div class="framer-1r6sw1n" data-framer-name="Left section" style="opacity: 1;"><div class="framer-p2tc5g" data-framer-name="Logo+tagline" style="opacity: 1;"><!--$--><a class="framer-15vbno8 framer-1kw8x0x" data-framer-name="Logo" href="./" style="opacity: 1;"><div class="framer-1xejdxu" data-framer-name="Image" style="opacity: 1;"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="auto" width="1043" height="257" sizes="(min-width: 1200px) 123px, (min-width: 810px) and (max-width: 1199.98px) 123px, (max-width: 809.98px) max(99px, 123px)" srcset="https://framerusercontent.com/images/qI4Sc1bIFla3Ib5SaMPD36tpIU.png?scale-down-to=512&amp;width=1043&amp;height=257 512w,https://framerusercontent.com/images/qI4Sc1bIFla3Ib5SaMPD36tpIU.png?scale-down-to=1024&amp;width=1043&amp;height=257 1024w,https://framerusercontent.com/images/qI4Sc1bIFla3Ib5SaMPD36tpIU.png?width=1043&amp;height=257 1043w" src="https://framerusercontent.com/images/qI4Sc1bIFla3Ib5SaMPD36tpIU.png?width=1043&amp;height=257" alt="" style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></div></a><!--/$--><div class="framer-1ttt0qu" data-highlight="true" data-framer-component-type="RichTextContainer" tabindex="0" style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-16w1u5n" data-styles-preset="csUbUKGQ_" dir="auto">· 문의: 062-376-8840<br class="framer-text">· 이메일 info@koraia.org</p></div></div></div></div></footer></div></div><div class="framer-diqy4o-container" data-framer-name="Copyright" name="Copyright"><div class="ssr-variant hidden-h7qui"><footer name="Copyright" class="framer-wU7Aq framer-4el2p framer-1ht9hyc framer-v-1ht9hyc" data-border="true" data-framer-name="Desktop" style="--border-bottom-width: 0px; --border-color: var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34)); --border-left-width: 0px; --border-right-width: 0px; --border-style: solid; --border-top-width: 2px; width: 100%; opacity: 1;"><div class="framer-cv3g46" data-framer-name="content" style="opacity: 1;"><div class="framer-se2ng1" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv: var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75)); transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-x6ge9v" data-styles-preset="D1fS_zrfW" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75)))">© BY KOREA ARTIFICIAL INTELLIGENCE ASSOCIATION, ALL RIGHTS RESERVED.</p></div></div></footer></div></div></div><div id="template-overlay"></div><!--/$--></div><script>(()=>{function u(){function n(t,e,i){let r=document.createElement("a");r.href=t,r.target=i,r.rel=e,document.body.appendChild(r),r.click(),r.remove()}function o(t){if(this.dataset.hydrated){this.removeEventListener("click",o);return}t.preventDefault(),t.stopPropagation();let e=this.getAttribute("href");if(!e)return;if(/Mac|iPod|iPhone|iPad/u.test(navigator.userAgent)?t.metaKey:t.ctrlKey)return n(e,"","_blank");let r=this.getAttribute("rel")??"",c=this.getAttribute("target")??"";n(e,r,c)}function a(t){if(this.dataset.hydrated){this.removeEventListener("auxclick",o);return}t.preventDefault(),t.stopPropagation();let e=this.getAttribute("href");e&&n(e,"","_blank")}function s(t){if(this.dataset.hydrated){this.removeEventListener("keydown",s);return}if(t.key!=="Enter")return;t.preventDefault(),t.stopPropagation();let e=this.getAttribute("href");if(!e)return;let i=this.getAttribute("rel")??"",r=this.getAttribute("target")??"";n(e,i,r)}document.querySelectorAll("[data-nested-link]").forEach(t=>{t instanceof HTMLElement&&(t.addEventListener("click",o),t.addEventListener("auxclick",a),t.addEventListener("keydown",s))})}return u})()()</script>
+        </script>
+    <body>
+</html>
+"></iframe></div><!--/$--></div><div class="framer-160wbsy" data-framer-name="Heading+subheading"><div class="framer-15lx39z" data-framer-component-type="RichTextContainer" style="transform:none"><p class="framer-text">test</p></div></div></section><div class="framer-197xdqf-container"><!--$--><div></div><!--/$--></div></div><div id="overlay"></div><div class="framer-1vlob5l"></div><div class="framer-ynm0sg-container"><div class="ssr-variant hidden-h7qui"><footer class="framer-C2Dqh framer-AIo2h framer-gl77ky framer-v-gl77ky" data-border="true" data-framer-name="Footer" style="--border-bottom-width: 0px; --border-color: var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34)); --border-left-width: 0px; --border-right-width: 0px; --border-style: solid; --border-top-width: 2px; background: radial-gradient(50% 50% at 50% 3.4%, rgba(95, 151, 207, 0.5) 0%, rgba(171, 171, 171, 0) 100%); width: 100%; opacity: 1;"><div class="framer-1e86zuq" data-framer-name="Container" style="opacity: 1;"><div class="framer-1r6sw1n" data-framer-name="Left section" style="opacity: 1;"><div class="framer-p2tc5g" data-framer-name="Logo+tagline" style="opacity: 1;"><!--$--><a class="framer-15vbno8 framer-1kw8x0x" data-framer-name="Logo" href="./" style="opacity: 1;"><div class="framer-1xejdxu" data-framer-name="Image" style="opacity: 1;"><div style="position:absolute;border-radius:inherit;corner-shape:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true"><img decoding="auto" width="1043" height="257" sizes="(min-width: 1200px) 123px, (min-width: 810px) and (max-width: 1199.98px) 123px, (max-width: 809.98px) max(99px, 123px)" srcset="https://framerusercontent.com/images/qI4Sc1bIFla3Ib5SaMPD36tpIU.png?scale-down-to=512&width=1043&height=257 512w,https://framerusercontent.com/images/qI4Sc1bIFla3Ib5SaMPD36tpIU.png?scale-down-to=1024&width=1043&height=257 1024w,https://framerusercontent.com/images/qI4Sc1bIFla3Ib5SaMPD36tpIU.png?width=1043&height=257 1043w" src="https://framerusercontent.com/images/qI4Sc1bIFla3Ib5SaMPD36tpIU.png?width=1043&height=257" alt="" style="display:block;width:100%;height:100%;border-radius:inherit;corner-shape:inherit;object-position:center;object-fit:cover"></div></div></a><!--/$--><div class="framer-1ttt0qu" data-highlight="true" data-framer-component-type="RichTextContainer" tabindex="0" style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-16w1u5n" data-styles-preset="csUbUKGQ_" dir="auto">· 문의: 062-376-8840<br class="framer-text">· 이메일 info@koraia.org</p></div></div></div></div></footer></div></div><div class="framer-diqy4o-container" data-framer-name="Copyright" name="Copyright"><div class="ssr-variant hidden-h7qui"><footer name="Copyright" class="framer-wU7Aq framer-4el2p framer-1ht9hyc framer-v-1ht9hyc" data-border="true" data-framer-name="Desktop" style="--border-bottom-width: 0px; --border-color: var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34)); --border-left-width: 0px; --border-right-width: 0px; --border-style: solid; --border-top-width: 2px; width: 100%; opacity: 1;"><div class="framer-cv3g46" data-framer-name="content" style="opacity: 1;"><div class="framer-se2ng1" data-framer-component-type="RichTextContainer" style="--extracted-r6o4lv: var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75)); transform: none; opacity: 1;"><p class="framer-text framer-styles-preset-x6ge9v" data-styles-preset="D1fS_zrfW" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75)))">© BY KOREA ARTIFICIAL INTELLIGENCE ASSOCIATION, ALL RIGHTS RESERVED.</p></div></div></footer></div></div></div><div id="template-overlay"></div><!--/$--></div><script>(()=>{function u(){function n(t,e,i){let r=document.createElement("a");r.href=t,r.target=i,r.rel=e,document.body.appendChild(r),r.click(),r.remove()}function o(t){if(this.dataset.hydrated){this.removeEventListener("click",o);return}t.preventDefault(),t.stopPropagation();let e=this.getAttribute("href");if(!e)return;if(/Mac|iPod|iPhone|iPad/u.test(navigator.userAgent)?t.metaKey:t.ctrlKey)return n(e,"","_blank");let r=this.getAttribute("rel")??"",c=this.getAttribute("target")??"";n(e,r,c)}function a(t){if(this.dataset.hydrated){this.removeEventListener("auxclick",o);return}t.preventDefault(),t.stopPropagation();let e=this.getAttribute("href");e&&n(e,"","_blank")}function s(t){if(this.dataset.hydrated){this.removeEventListener("keydown",s);return}if(t.key!=="Enter")return;t.preventDefault(),t.stopPropagation();let e=this.getAttribute("href");if(!e)return;let i=this.getAttribute("rel")??"",r=this.getAttribute("target")??"";n(e,i,r)}document.querySelectorAll("[data-nested-link]").forEach(t=>{t instanceof HTMLElement&&(t.addEventListener("click",o),t.addEventListener("auxclick",a),t.addEventListener("keydown",s))})}return u})()()</script>
 	<script>!function(){var w="framer_variant";function u(a,r){let e=r.indexOf("#"),t=e===-1?r:r.substring(0,e),o=e===-1?"":r.substring(e),n=t.indexOf("?"),h=n===-1?t:t.substring(0,n),d=n===-1?"":t.substring(n),s=new URLSearchParams(d),m=new URLSearchParams(a);for(let[i,l]of m)s.has(i)||i!==w&&s.append(i,l);let c=s.toString();return c===""?t+o:h+"?"+c+o}var g='div#main a[href^="#"],div#main a[href^="/"],div#main a[href^="."]',f="div#main a[data-framer-preserve-params]",S=document.currentScript?.hasAttribute("data-preserve-internal-params");if(window.location.search&&!navigator.webdriver&&!/bot|-google|google-|yandex|ia_archiver|crawl|spider/iu.test(navigator.userAgent)){let a=document.querySelectorAll(S?`${g},${f}`:f);for(let r of a){let e=u(window.location.search,r.href);r.setAttribute("href",e)}}
 }()</script>
 	
@@ -1111,6 +1217,6 @@
   background-color: #F6F7FB !important;
 }
 
-</style></div></div><iframe id="__framer-editorbar" src="https://framer.com/edit?framerSiteId=a12c157d9091d13581c28b7ca69296ca8888805fc482908205f1f78210351f6a&amp;source=invisible-account-722663.framer.app&amp;features=%7B%22editorBarDisableFrameAncestorsSecurity%22%3Afalse%2C%22onPageLocalizationSupport%22%3Atrue%2C%22onPageMoveTool%22%3Atrue%7D&amp;loadStart=1777263947933&amp;forceShow=true" aria-hidden="true" allow="autoplay" tabindex="-1" class="status_visually_hidden"></iframe>
-</body>
-</html>
+</style></div></div><iframe id="__framer-editorbar" src="https://framer.com/edit?framerSiteId=a12c157d9091d13581c28b7ca69296ca8888805fc482908205f1f78210351f6a&source=invisible-account-722663.framer.app&features=%7B%22editorBarDisableFrameAncestorsSecurity%22%3Afalse%2C%22onPageLocalizationSupport%22%3Atrue%2C%22onPageMoveTool%22%3Atrue%7D&loadStart=1777263947933&forceShow=true" aria-hidden="true" allow="autoplay" tabindex="-1" class="status_visually_hidden"></iframe>
+
+<iframe id="__framer-editorbar" src="https://framer.com/edit?framerSiteId=a12c157d9091d13581c28b7ca69296ca8888805fc482908205f1f78210351f6a&source=&features=%7B%22editorBarDisableFrameAncestorsSecurity%22%3Afalse%2C%22onPageLocalizationSupport%22%3Atrue%2C%22onPageMoveTool%22%3Atrue%7D&loadStart=1777264202989" aria-hidden="true" allow="autoplay" tabindex="-1" class="status_hidden"></iframe></body></html>
